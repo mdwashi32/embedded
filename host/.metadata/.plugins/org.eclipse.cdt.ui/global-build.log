@@ -1,4 +1,4 @@
-11:26:30 **** Build of configuration Debug for project 0001Test ****
+11:36:41 **** Incremental Build of configuration Debug for project 0001Test ****
 make all 
 Building file: ../main.c
 Invoking: GCC C Compiler
