@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+
+int main(void){
+
+	printf("Escape sequences in C:\n");
+
+	printf("\\' - Single quote\n");
+
+	printf("\\\\\" - Double quote\n");
+
+	printf("\\\\ - Backslash\n");
+
+	printf("\\0 - Null\n");
+
+	printf("\\a - Bell\n");
+
+	printf("\\b - Backspace\n");
+
+	printf("\\f - form Feed\n");
+
+	printf("\\n - Newline\n");
+
+	printf("\\r - Carriage Return\n");
+
+	printf("\\t - Horizontal Tab\n");
+
+	printf("\\v - Vertical Tab\n");
+
+
+	return 0;
+}

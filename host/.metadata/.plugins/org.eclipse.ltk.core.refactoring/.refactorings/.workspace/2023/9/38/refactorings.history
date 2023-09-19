@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;0001Test&apos; to &apos;Escape C&apos;" description="Rename resource &apos;0001Test&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/0001Test" name="Escape C" stamp="1695093664149" updateReferences="true"/>
+</session>

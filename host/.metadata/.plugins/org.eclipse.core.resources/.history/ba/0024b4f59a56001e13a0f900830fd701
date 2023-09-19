@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+
+int main(void){
+
+	printf("Hello World!\n");
+
+	printf("Today is a great day!\n");
+
+	printf("Escape sequences in c:");
+
+	printf("\\' single quote\n");
+
+	printf("\\" double quote\n");
+
+	printf("\\\ backslash maybe\n");
+
+	printf("\\0 Null\n");
+
+	printf("\\a Bell\n");
+
+	printf("\\b Backspace\n");
+
+	printf("\\f form Feed\n");
+
+	printf("\\n Newline\n");
+
+	printf("\\r Carriage Return\n");
+
+	printf("\\t Horizontal Tab\n");
+
+	printf("\\v Vertical Tab\n");
+
+
+	return 0;
+}

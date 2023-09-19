@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+
+int main(void){
+
+	printf("David Says, \" Programming is fun !\"\n");
+	printf("**Conditions apply, \"Offers valid until tomorrow\"");
+	printf("C:\\My computer\\My folder");
+	printf("D:/My documents/My file");
+	printf("\\\\\\\\Today is holiday\\\\\\\\");
+	printf("This is a triple quoted string \"\"\"This month has 30 days\"\"\"");
+	return 0;
+}
