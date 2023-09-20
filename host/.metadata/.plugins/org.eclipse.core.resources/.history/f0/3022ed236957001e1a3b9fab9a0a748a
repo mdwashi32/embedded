@@ -1,0 +1,38 @@
+Variables are simply identifiers for data
+
+Data is *usually* stored in memory
+
+Variables act as label to mem location where data is stored
+
+Variable names not stored in computer memory, compiler replaces variables with memory location address during data manipulation ( don't exist post-compilation)
+
+Memory location addresses a.k.a pointers
+
+Defining a variable reserves space for data type
+e.g. 	char myscore; //Variable definition
+
+		myscore=25; //Variable initialization
+		
+Two statements def comes before init  or single line
+
+Rules for naming variables
+
+-No more than 30 characters
+-Can only contain alphabet characters, digits, and underscore (no other special characters)
+-First letter of variable cannot be a digit
+-Cannot use 'C" standard reserve words as varable names
+
+Difference between Definition and Declaraction
+
+-Variable is *defined* when compiler generates instructions to allocate storage for variable
+	e.g. int myint;
+		  myint = 8;
+	// The above is defined in local space (within main function)
+	
+-Variable is *declared* when the compiler is informed that a variable exists along with its type. 
+	-The compiler does no generate instructions to allocate the storage for the variable at this point
+	e.g. define variable in global space
+	extern int myint;
+	when compiler sees above (always outside of main function) it knows var is defined other place outside of current file and will not allocate storage for this 
+	
+- A variable definition is also a variable declaration, but not all variable declarations are variable definitions

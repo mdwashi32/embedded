@@ -1,0 +1,20 @@
+In C for signed datatypes, a leading bit of 1 indicates a negative number. To represent a negative we calculate 2s completment of its positive equivalent.
+
+e.g. We want to represent -25 in 1 byte signed data representation.
+	
+		First, take 1s comp of number (Replace 0s with 1s and 1s with 0s)
+		Decimal 25 is equivalent to 011001 but need to extend to 8 bits
+		0001 1001 => 1110 0110
+		
+		Next, for 2s comp, add 1 to number
+			1110 0110
+			+		1
+			---------
+		=	1110 0111 	=	-25
+		=    E    7
+		
+e.g. We want to represent 25 in 1 byte signed data representation
+
+		No need for 2s comp for positive
+		
+			0001 1001	= 	25when 

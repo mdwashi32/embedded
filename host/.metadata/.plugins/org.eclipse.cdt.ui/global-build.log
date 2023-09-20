@@ -105,3 +105,292 @@ Invoking: GCC C Linker
 gcc  -o "tests"  ./main.o   
 Finished building target: tests
  
+19:38:38 **** Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:18:11: warning: format ‘%i’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+   18 |  printf("%i",&C);
+      |          ~^  ~~
+      |           |  |
+      |           |  int *
+      |           int
+      |          %ls
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+19:38:39 **** Incremental Build of configuration Debug for project tests ****
+make all 
+make: Nothing to be done for 'all'.
+19:38:56 **** Incremental Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+19:38:58 **** Incremental Build of configuration Debug for project tests ****
+make all 
+make: Nothing to be done for 'all'.
+19:40:16 **** Incremental Build of configuration Debug for project Escape C ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project notes ****
+
+Nothing to build for project notes
+19:40:17 **** Incremental Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:17:13: warning: multi-character character constant [-Wmultichar]
+   17 |  int name = 'Boy';
+      |             ^~~~~
+../main.c:17:6: warning: unused variable ‘name’ [-Wunused-variable]
+   17 |  int name = 'Boy';
+      |      ^~~~
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+19:41:05 **** Incremental Build of configuration Debug for project Escape C ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project notes ****
+
+Nothing to build for project notes
+19:41:06 **** Incremental Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:17:13: warning: multi-character character constant [-Wmultichar]
+   17 |  int name = 'Boy';
+      |             ^~~~~
+../main.c:17:6: warning: unused variable ‘name’ [-Wunused-variable]
+   17 |  int name = 'Boy';
+      |      ^~~~
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+19:41:50 **** Incremental Build of configuration Debug for project Escape C ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project notes ****
+
+Nothing to build for project notes
+19:41:51 **** Incremental Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+19:42:01 **** Incremental Build of configuration Debug for project tests ****
+make all 
+make: Nothing to be done for 'all'.
+19:42:21 **** Incremental Build of configuration Debug for project tests ****
+make all 
+make: Nothing to be done for 'all'.
+19:42:45 **** Incremental Build of configuration Debug for project Escape C ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project notes ****
+
+Nothing to build for project notes
+19:42:46 **** Incremental Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+19:42:46 **** Incremental Build of configuration Debug for project tests ****
+make all 
+make: Nothing to be done for 'all'.
+19:44:41 **** Incremental Build of configuration Debug for project Escape C ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project notes ****
+
+Nothing to build for project notes
+19:44:42 **** Incremental Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+19:44:43 **** Incremental Build of configuration Debug for project tests ****
+make all 
+make: Nothing to be done for 'all'.
+19:44:58 **** Incremental Build of configuration Debug for project Escape C ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project notes ****
+
+Nothing to build for project notes
+19:44:58 **** Incremental Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+19:44:59 **** Incremental Build of configuration Debug for project tests ****
+make all 
+make: Nothing to be done for 'all'.
+20:16:10 **** Incremental Build of configuration Debug for project Escape C ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project notes ****
+
+Nothing to build for project notes
+20:16:11 **** Incremental Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:20:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   20 |  printf("Size of char data type = %d\n",sizeof(char));
+      |                                   ~^    ~~~~~~~~~~~~
+      |                                    |    |
+      |                                    int  long unsigned int
+      |                                   %ld
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+20:16:13 **** Incremental Build of configuration Debug for project tests ****
+make all 
+make: Nothing to be done for 'all'.
+20:16:33 **** Incremental Build of configuration Debug for project Escape C ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project notes ****
+
+Nothing to build for project notes
+20:16:34 **** Incremental Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:20:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   20 |  printf("Size of char data type = %d\n",sizeof(short));
+      |                                   ~^    ~~~~~~~~~~~~~
+      |                                    |    |
+      |                                    int  long unsigned int
+      |                                   %ld
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+20:17:47 **** Incremental Build of configuration Debug for project Escape C ****
+make all 
+make: Nothing to be done for 'all'.
+
+**** Build of configuration Debug for project notes ****
+
+Nothing to build for project notes
+20:17:47 **** Incremental Build of configuration Debug for project tests ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function ‘main’:
+../main.c:20:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   20 |  printf("Size of char data type = %d\n",sizeof(char));
+      |                                   ~^    ~~~~~~~~~~~~
+      |                                    |    |
+      |                                    int  long unsigned int
+      |                                   %ld
+../main.c:21:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   21 |  printf("Size of short data type = %d\n",sizeof(short));
+      |                                    ~^    ~~~~~~~~~~~~~
+      |                                     |    |
+      |                                     int  long unsigned int
+      |                                    %ld
+../main.c:22:35: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   22 |  printf("Size of int data type = %d\n",sizeof(int));
+      |                                  ~^    ~~~~~~~~~~~
+      |                                   |    |
+      |                                   int  long unsigned int
+      |                                  %ld
+../main.c:23:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   23 |  printf("Size of long data type = %d\n",sizeof(long));
+      |                                   ~^    ~~~~~~~~~~~~
+      |                                    |    |
+      |                                    int  long unsigned int
+      |                                   %ld
+../main.c:24:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   24 |  printf("Size of long long data type = %d\n",sizeof(long long));
+      |                                        ~^    ~~~~~~~~~~~~~~~~~
+      |                                         |    |
+      |                                         int  long unsigned int
+      |                                        %ld
+Finished building: ../main.c
+ 
+Building target: tests
+Invoking: GCC C Linker
+gcc  -o "tests"  ./main.o   
+Finished building target: tests
+ 
+20:17:51 **** Incremental Build of configuration Debug for project tests ****
+make all 
+make: Nothing to be done for 'all'.

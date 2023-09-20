@@ -1,0 +1,18 @@
+sizeof will find out the size of a variable
+- may be different on different machines
+- compiler dependent (be careful when it comes to portability of code)
+
+on this compiler (Linux GCC)
+
+	printf("Total distance from A2C is %X 251\n",C);
+	printf("Size of char data type = %d\n",sizeof(char));
+	printf("Size of short data type = %d\n",sizeof(short));
+	printf("Size of int data type = %d\n",sizeof(int));
+	printf("Size of long data type = %d\n",sizeof(long));
+	printf("Size of long long data type = %d\n",sizeof(long long));
+	
+	Size of char data type = 1
+	Size of short data type = 2
+	Size of int data type = 4
+	Size of long data type = 8
+	Size of long long data type = 8

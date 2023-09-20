@@ -1,0 +1,3 @@
+sizeof will find out the size of a variable
+- may be different on different machines
+- compiler dependent (be careful when it comes to portability of code)

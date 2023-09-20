@@ -1,0 +1,7 @@
+Variables are simply identifiers for data
+
+Data is *usually* stored in memory
+
+Variables act as label to mem location where data is stored
+
+Variable names not stored in computer memory, compiler replaces variables with memory location address during data manipulation

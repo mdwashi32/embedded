@@ -1,0 +1,22 @@
+//comment style one
+
+/*Comment style two
+ * on another line
+ * and another
+ */
+
+
+
+#include <stdio.h>
+
+int main(void){
+
+	int AtoB = 160;
+	int BtoC = 40;
+	int C = AtoB + BtoC;
+
+
+	printf("%i",C);
+
+	return 0;
+}
