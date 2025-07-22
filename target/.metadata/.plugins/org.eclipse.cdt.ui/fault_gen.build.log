@@ -1,0 +1,9 @@
+18:37:26 **** Clean-only build of configuration Debug for project fault_gen ****
+make -j11 clean 
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/main1.cyclo ./Src/main1.d ./Src/main1.o ./Src/main1.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf default.size.stdout fault_gen.elf fault_gen.list fault_gen.map
+ 
+
+18:37:26 Build Finished. 0 errors, 0 warnings. (took 141ms)
+

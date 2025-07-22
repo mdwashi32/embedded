@@ -1,0 +1,68 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 5, 2025
+ *      Author: mauricewashington
+ */
+#include <stdint.h>
+#include <stdio.h>
+
+void array_swap(uint32_t* pArray1,uint32_t* pArray2, uint8_t len);
+
+
+
+int main(){
+
+	printf("Please enter number of elements for Array 1 and Array 2:\n");
+	uint8_t length;
+	scanf(" %u", &length);
+
+	uint32_t array1[length];
+	uint32_t array2[length];
+
+	printf("Please enter the elements of Array 1, please enter integer and hit enter after each value:\n");
+	for(uint32_t i = 0; i < length; i++){
+		printf("Element %u:\n",i);
+		scanf(" %u",array1[i]);
+	}
+
+	printf("Please enter the elements of Array 2, please enter integer and hit enter after each value:\n");
+	for(uint32_t i = 0; i < length; i++){
+		printf("Element %u:\n",i);
+		scanf(" %u",array1[i]);
+	}
+
+
+
+
+
+
+
+
+
+	return 0;
+}
+
+void array_swap(uint32_t* pArray1,uint32_t* pArray2, uint8_t len){
+	uint32_t temp1 = 0;
+	uint32_t temp2 = 0;
+
+	for(uint32_t i = 0; i < len; i++){
+		temp1 = pArray1[i];
+		temp2 = pArray2[i];
+		pArray2[i] = temp1;
+		pArray1[i] = temp2;
+	}
+
+	printf("New elements in Array1:\n");
+	for(uint32_t i = 0; i < len; i++){
+		printf("%u:\t",pArray1[i]);
+	}
+	printf("\n");
+
+	printf("New elements in Array2:\n");
+	for(uint32_t i = 0; i < len; i++){
+		printf("%u:\t",pArray2[i]);
+	}
+	printf("\n");
+}

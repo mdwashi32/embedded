@@ -1,0 +1,8 @@
+17:03:43 **** Clean-only build of configuration Debug for project pyramid ****
+make clean 
+rm -rf ./main.d ./main.o
+rm -rf pyramid
+ 
+
+17:03:43 Build Finished. 0 errors, 0 warnings. (took 189ms)
+

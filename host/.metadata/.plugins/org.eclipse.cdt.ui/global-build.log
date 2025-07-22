@@ -1,0 +1,2003 @@
+17:27:47 **** Clean-only build of configuration Debug for project stringVarVSstringLiteralConst ****
+make clean 
+rm -rf ./main.d ./main.o
+rm -rf stringVarVSstringLiteralConst
+ 
+17:54:01 **** Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:23:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   23 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+17:54:39 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+17:55:18 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:23:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   23 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+17:55:21 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+17:55:52 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:24:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   24 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+17:55:55 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+17:56:15 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:24:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   24 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:01:54 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:26:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   26 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:22:38 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:29:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   29 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:34:38: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+   34 |                                 if (studentRecords[0].rollNumber = 0){
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../main.c:34:38: note: place parentheses around the assignment to silence this warning
+   34 |                                 if (studentRecords[0].rollNumber = 0){
+      |                                                                  ^  
+      |                                     (                               )
+../main.c:34:38: note: use '==' to turn this assignment into an equality comparison
+   34 |                                 if (studentRecords[0].rollNumber = 0){
+      |                                                                  ^
+      |                                                                  ==
+../main.c:43:7: error: call to undeclared function 'pprintf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   43 |                                                 pprintf("Date of Birth: %s",studentRecords[i].dob);
+      |                                                 ^
+../main.c:50:17: error: use of undeclared identifier 'length'
+   50 |                                 if(count >= length){
+      |                                             ^
+../main.c:56:45: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   56 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                        ~~                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:56:164: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   56 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                                                   ~~                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings and 2 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:22:59 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:29:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   29 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:34:38: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+   34 |                                 if (studentRecords[0].rollNumber = 0){
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../main.c:34:38: note: place parentheses around the assignment to silence this warning
+   34 |                                 if (studentRecords[0].rollNumber = 0){
+      |                                                                  ^  
+      |                                     (                               )
+../main.c:34:38: note: use '==' to turn this assignment into an equality comparison
+   34 |                                 if (studentRecords[0].rollNumber = 0){
+      |                                                                  ^
+      |                                                                  ==
+../main.c:50:17: error: use of undeclared identifier 'length'
+   50 |                                 if(count >= length){
+      |                                             ^
+../main.c:56:45: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   56 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                        ~~                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:56:164: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   56 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                                                   ~~                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings and 1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:23:15 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:29:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   29 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:34:38: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+   34 |                                 if (studentRecords[0].rollNumber = 0){
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../main.c:34:38: note: place parentheses around the assignment to silence this warning
+   34 |                                 if (studentRecords[0].rollNumber = 0){
+      |                                                                  ^  
+      |                                     (                               )
+../main.c:34:38: note: use '==' to turn this assignment into an equality comparison
+   34 |                                 if (studentRecords[0].rollNumber = 0){
+      |                                                                  ^
+      |                                                                  ==
+../main.c:56:45: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   56 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                        ~~                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:56:164: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   56 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                                                   ~~                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:23:36 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:29:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   29 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:56:45: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   56 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                        ~~                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:56:164: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   56 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                                                   ~~                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:23:56 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+18:24:54 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:57:45: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   57 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                        ~~                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:57:164: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   57 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                                                   ~~                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:25:00 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+18:25:43 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:36:57: error: expected ';' after expression
+   36 |                                         printf("Sorry, no students have been added yet.\n")
+      |                                                                                            ^
+      |                                                                                            ;
+../main.c:58:45: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                        ~~                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:58:164: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                                                   ~~                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings and 1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:25:48 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:58:45: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                        ~~                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:58:164: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, studentRecords[count].semester);
+      |                                                                   ~~                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:25:51 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+18:26:40 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:58:45: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", &studentRecords[count].rollNumber, &studentRecords[count].name, &studentRecords[count].branch, &studentRecords[count].dob, &studentRecords[count].semester);
+      |                                        ~~                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                        %s
+../main.c:58:80: warning: format specifies type 'char *' but the argument has type 'char (*)[20]' [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", &studentRecords[count].rollNumber, &studentRecords[count].name, &studentRecords[count].branch, &studentRecords[count].dob, &studentRecords[count].semester);
+      |                                           ~~~~                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:58:109: warning: format specifies type 'char *' but the argument has type 'char (*)[50]' [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", &studentRecords[count].rollNumber, &studentRecords[count].name, &studentRecords[count].branch, &studentRecords[count].dob, &studentRecords[count].semester);
+      |                                                   ~~~~                                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:58:140: warning: format specifies type 'char *' but the argument has type 'char (*)[15]' [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", &studentRecords[count].rollNumber, &studentRecords[count].name, &studentRecords[count].branch, &studentRecords[count].dob, &studentRecords[count].semester);
+      |                                                           ~~~~                                                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:58:168: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", &studentRecords[count].rollNumber, &studentRecords[count].name, &studentRecords[count].branch, &studentRecords[count].dob, &studentRecords[count].semester);
+      |                                                                   ~~                                                                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                   %s
+6 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:27:12 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:58:45: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", &studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, &studentRecords[count].semester);
+      |                                        ~~                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                        %s
+../main.c:58:165: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   58 |                                 scanf("%u %[^\n]s %[^\n]s %[^\n]s %u ", &studentRecords[count].rollNumber, studentRecords[count].name, studentRecords[count].branch, studentRecords[count].dob, &studentRecords[count].semester);
+      |                                                                   ~~                                                                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                   %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:27:16 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+18:30:22 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:58:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   58 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:62:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   62 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:31:11 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:58:18: error: cannot take the address of an rvalue of type 'uint8_t' (aka 'unsigned char')
+   58 |                                 scanf(" %u", &(uint8_t)studentRecords[count].rollNumber);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:62:18: error: cannot take the address of an rvalue of type 'uint8_t' (aka 'unsigned char')
+   62 |                                 scanf(" %u", &(uint8_t)studentRecords[count].semester);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 2 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:31:27 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:58:18: error: cannot take the address of an rvalue of type 'int'
+   58 |                                 scanf(" %u", &(int)studentRecords[count].rollNumber);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:62:18: error: cannot take the address of an rvalue of type 'int'
+   62 |                                 scanf(" %u", &(int)studentRecords[count].semester);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning and 2 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:31:41 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:58:18: warning: cast to 'int *' from smaller integer type 'uint8_t' (aka 'unsigned char') [-Wint-to-pointer-cast]
+   58 |                                 scanf(" %u", (int*)studentRecords[count].rollNumber);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:62:18: warning: cast to 'int *' from smaller integer type 'uint8_t' (aka 'unsigned char') [-Wint-to-pointer-cast]
+   62 |                                 scanf(" %u", (int*)studentRecords[count].semester);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../main.c
+3 warnings generated.
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:31:57 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:58:18: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   58 |                                 scanf(" %u", studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:62:18: warning: format specifies type 'unsigned int *' but the argument has type 'int' [-Wformat]
+   62 |                                 scanf(" %u", studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:32:00 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+18:32:28 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:30:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   30 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:58:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   58 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:62:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   62 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:32:31 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+18:33:04 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+18:41:24 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:19:28: warning: empty character constant [-Winvalid-pp-token]
+   19 |                 studentRecords[i].name = '';
+      |                                          ^
+../main.c:19:28: error: expected expression
+../main.c:21:30: warning: empty character constant [-Winvalid-pp-token]
+   21 |                 studentRecords[i].branch = '';
+      |                                            ^
+../main.c:21:30: error: expected expression
+../main.c:22:27: warning: empty character constant [-Winvalid-pp-token]
+   22 |                 studentRecords[i].dob = '';
+      |                                         ^
+../main.c:22:27: error: expected expression
+../main.c:37:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   37 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:48:24: error: member reference base type 'STUDENT_INFO_t[10]' is not a structure or union
+   48 |                                                 if(studentRecords.rollNumber != 0){
+      |                                                    ~~~~~~~~~~~~~~^~~~~~~~~~~
+../main.c:67:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   67 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:77:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   77 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+6 warnings and 4 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:42:49 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:19:28: warning: empty character constant [-Winvalid-pp-token]
+   19 |                 studentRecords[i].name = '';
+      |                                          ^
+../main.c:19:28: error: expected expression
+../main.c:21:30: warning: empty character constant [-Winvalid-pp-token]
+   21 |                 studentRecords[i].branch = '';
+      |                                            ^
+../main.c:21:30: error: expected expression
+../main.c:22:27: warning: empty character constant [-Winvalid-pp-token]
+   22 |                 studentRecords[i].dob = '';
+      |                                         ^
+../main.c:22:27: error: expected expression
+../main.c:37:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   37 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:48:24: error: member reference base type 'STUDENT_INFO_t[10]' is not a structure or union
+   48 |                                                 if(studentRecords.rollNumber[i] != 0){
+      |                                                    ~~~~~~~~~~~~~~^~~~~~~~~~~
+../main.c:67:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   67 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:78:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   78 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+6 warnings and 4 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:43:30 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:19:28: warning: empty character constant [-Winvalid-pp-token]
+   19 |                 studentRecords[i].name = '';
+      |                                          ^
+../main.c:19:28: error: expected expression
+../main.c:21:30: warning: empty character constant [-Winvalid-pp-token]
+   21 |                 studentRecords[i].branch = '';
+      |                                            ^
+../main.c:21:30: error: expected expression
+../main.c:22:27: warning: empty character constant [-Winvalid-pp-token]
+   22 |                 studentRecords[i].dob = '';
+      |                                         ^
+../main.c:22:27: error: expected expression
+../main.c:37:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   37 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:67:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   67 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:78:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   78 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+6 warnings and 3 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:43:53 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:19:28: warning: empty character constant [-Winvalid-pp-token]
+   19 |                 studentRecords[i].name = '';
+      |                                          ^
+../main.c:19:28: error: expected expression
+../main.c:21:30: warning: empty character constant [-Winvalid-pp-token]
+   21 |                 studentRecords[i].branch = '';
+      |                                            ^
+../main.c:21:30: error: expected expression
+../main.c:22:27: warning: empty character constant [-Winvalid-pp-token]
+   22 |                 studentRecords[i].dob = '';
+      |                                         ^
+../main.c:22:27: error: expected expression
+../main.c:37:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   37 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:67:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   67 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:78:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   78 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+6 warnings and 3 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:46:03 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:19:26: error: array type 'char[20]' is not assignable
+   19 |                 studentRecords[i].name = "";
+      |                 ~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:21:28: error: array type 'char[50]' is not assignable
+   21 |                 studentRecords[i].branch = "";
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:22:25: error: array type 'char[15]' is not assignable
+   22 |                 studentRecords[i].dob = "";
+      |                 ~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:37:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   37 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:67:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   67 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:78:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   78 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+3 warnings and 3 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:46:09 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:19:26: error: array type 'char[20]' is not assignable
+   19 |                 studentRecords[i].name = " ";
+      |                 ~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:21:28: error: array type 'char[50]' is not assignable
+   21 |                 studentRecords[i].branch = " ";
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:22:25: error: array type 'char[15]' is not assignable
+   22 |                 studentRecords[i].dob = " ";
+      |                 ~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:37:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   37 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:67:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   67 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:78:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   78 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+3 warnings and 3 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:46:23 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:19:26: error: array type 'char[20]' is not assignable
+   19 |                 studentRecords[i].name = "\0";
+      |                 ~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:21:28: error: array type 'char[50]' is not assignable
+   21 |                 studentRecords[i].branch = "\n";
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:22:25: error: array type 'char[15]' is not assignable
+   22 |                 studentRecords[i].dob = "\n";
+      |                 ~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:37:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   37 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:67:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   67 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:78:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   78 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+3 warnings and 3 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:46:55 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:19:26: error: array type 'char[20]' is not assignable
+   19 |                 studentRecords[i].name = "";
+      |                 ~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:21:28: error: array type 'char[50]' is not assignable
+   21 |                 studentRecords[i].branch = "\n";
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:22:25: error: array type 'char[15]' is not assignable
+   22 |                 studentRecords[i].dob = "\n";
+      |                 ~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:37:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   37 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:67:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   67 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:78:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   78 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+3 warnings and 3 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:48:11 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:19:26: error: array type 'char[20]' is not assignable
+   19 |                 studentRecords[i].name = "XXXXXXX";
+      |                 ~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:21:28: error: array type 'char[50]' is not assignable
+   21 |                 studentRecords[i].branch = "XXXXXXX";
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:22:25: error: array type 'char[15]' is not assignable
+   22 |                 studentRecords[i].dob = "XXXXXXX";
+      |                 ~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:37:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   37 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:67:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   67 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:78:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   78 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+3 warnings and 3 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:49:15 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:37:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   37 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:67:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   67 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:78:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   78 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:49:21 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+18:59:13 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:39:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   39 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:69:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   69 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:85:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   85 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+18:59:31 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+18:59:33 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+19:00:57 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:39:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   39 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:69:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   69 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:89:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   89 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+19:01:01 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+19:08:24 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:70:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   70 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:90:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   90 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:97:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   97 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+4 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+19:08:28 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+19:12:00 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:70:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   70 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:90:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   90 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:97:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   97 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+4 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+19:12:03 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+19:22:27 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:71:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   71 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:91:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   91 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:98:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   98 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+4 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+19:22:39 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+19:23:55 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+19:25:34 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:71:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   71 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:103:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  103 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+4 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+19:25:37 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+19:26:11 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:71:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   71 |                                 scanf(" %u", &studentRecords[count].rollNumber);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:103:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  103 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+4 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+19:26:54 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:103:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  103 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+19:27:00 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+19:27:17 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:19:10 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:79:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   79 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:103:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  103 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:19:14 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:22:49 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:79:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   79 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:104:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  104 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:22:51 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:26:30 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:76:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   76 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:100:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  100 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:26:34 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:30:27 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:76:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   76 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:79:23: error: expected expression
+   79 |                                 for(int i = 0; i =< count; i++){
+      |                                                   ^
+../main.c:100:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  100 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings and 1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:30:39 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:76:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   76 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:100:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  100 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:33:19 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:76:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   76 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:33:22 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:35:02 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:94:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   94 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:101:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  101 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:36:24 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:36:26 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:40:39 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:40:41 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:41:08 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:41:11 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:41:58 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:42:00 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:43:18 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:43:53 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:47:19 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:47:21 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:49:09 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:49:12 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+20:50:01 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+20:59:44 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:72:40: error: member reference type 'STUDENT_INFO_t' is not a pointer; did you mean to use '.'?
+   72 |                                 scanf(" %u", &studentRecords[count]->rollNumber);
+      |                                               ~~~~~~~~~~~~~~~~~~~~~^~
+      |                                                                    .
+../main.c:72:18: error: cannot take the address of an rvalue of type 'uint32_t' (aka 'unsigned int')
+   72 |                                 scanf(" %u", &studentRecords[count]->rollNumber);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:87:31: error: member reference type 'STUDENT_INFO_t' is not a pointer; did you mean to use '.'?
+   87 |                                                                         studentRecords[count]->rollNumber = 0;
+      |                                                                         ~~~~~~~~~~~~~~~~~~~~~^~
+      |                                                                                              .
+../main.c:87:44: error: expression is not assignable
+   87 |                                                                         studentRecords[count]->rollNumber = 0;
+      |                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings and 4 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:59:58 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:00:08 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:00:27 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:95:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   95 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:102:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  102 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:00:30 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:04:30 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:105:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  105 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:04:32 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:06:29 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:105:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  105 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:06:32 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:08:21 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:105:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  105 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:08:23 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:10:48 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:108:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  108 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:10:49 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:13:45 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:108:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  108 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:13:47 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:20:35 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:108:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  108 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:20:38 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:22:14 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:108:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  108 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:22:21 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:23:58 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:141:20: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  141 |                             scanf("%u", &deletion);
+      |                                    ~~   ^~~~~~~~~
+      |                                    %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:24:00 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:25:14 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:140:20: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  140 |                             scanf("%u", &deletion);
+      |                                    ~~   ^~~~~~~~~
+      |                                    %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:25:19 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:25:46 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:27:11 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:140:20: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  140 |                             scanf("%u", &deletion);
+      |                                    ~~   ^~~~~~~~~
+      |                                    %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:27:14 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:30:35 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:120:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  120 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+../main.c:141:6: error: expected expression
+  141 |                                         else printf("Input does not match student\n\n");
+      |                                         ^
+3 warnings and 1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:30:47 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:120:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  120 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:30:49 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:33:12 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:22:31: error: incompatible pointer to integer conversion assigning to 'char' from 'char[8]' [-Wint-conversion]
+   22 |                 *(studentRecords + i)->name = "XXXXXXX";
+      |                                             ^ ~~~~~~~~~
+../main.c:24:31: error: incompatible pointer to integer conversion assigning to 'char' from 'char[8]' [-Wint-conversion]
+   24 |                 *(studentRecords+i)->branch = "XXXXXXX";
+      |                                             ^ ~~~~~~~~~
+../main.c:25:29: error: incompatible pointer to integer conversion assigning to 'char' from 'char[8]' [-Wint-conversion]
+   25 |                 *(studentRecords +i)->dob = "XXXXXXX";
+      |                                           ^ ~~~~~~~~~
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:120:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  120 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings and 3 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:35:06 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:40:15: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   40 |                 scanf(" %u",&choice);
+      |                         ~~  ^~~~~~~
+      |                         %s
+../main.c:96:18: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+   96 |                                 scanf(" %u", &studentRecords[count].semester);
+      |                                         ~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %s
+../main.c:120:17: warning: format specifies type 'unsigned int *' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+  120 |                                 scanf("%u", &deletion);
+      |                                        ~~   ^~~~~~~~~
+      |                                        %s
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:36:17 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:73:20: warning: format specifies type 'unsigned char *' but the argument has type 'uint32_t *' (aka 'unsigned int *') [-Wformat]
+   73 |                                 scanf(" %hhu", &studentRecords[count].rollNumber);
+      |                                         ~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         %u
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:36:56 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:36:59 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:43:04 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 
+21:43:07 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+make: Nothing to be done for `all'.
+21:45:06 **** Incremental Build of configuration Debug for project studentRecords_stringsExcercise ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: studentRecords_stringsExcercise
+Invoking: MacOS X C Linker
+gcc  -o "studentRecords_stringsExcercise"  ./main.o   
+Finished building target: studentRecords_stringsExcercise
+ 

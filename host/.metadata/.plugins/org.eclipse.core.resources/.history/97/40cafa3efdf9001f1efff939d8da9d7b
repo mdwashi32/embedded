@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 5, 2025
+ *      Author: mauricewashington
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+int main(){
+
+
+
+	uint8_t someData[] = {0xff,0xff,0xff};
+	uint8_t size = sizeof(someData)/sizeof(uint8_t);
+
+	printf("Array length: %u",size);
+
+
+
+
+	return 0;
+}

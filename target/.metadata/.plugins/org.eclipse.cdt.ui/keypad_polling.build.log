@@ -1,0 +1,10 @@
+21:37:47 **** Incremental Build of configuration Debug for project keypad_polling ****
+make -j11 all 
+arm-none-eabi-size  keypad_polling.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4184	     92	   1900	   6176	   1820	keypad_polling.elf
+Finished building: default.size.stdout
+ 
+
+21:37:47 Build Finished. 0 errors, 0 warnings. (took 124ms)
+

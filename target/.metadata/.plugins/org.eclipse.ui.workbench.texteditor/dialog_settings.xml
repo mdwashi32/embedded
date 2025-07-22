@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="true"/>
+	<list key="searchhistory">
+		<item value="IRQHan"/>
+		<item value="IRQ"/>
+		<item value="SPI4"/>
+		<item value="ackbyte"/>
+		<item value="commandcode"/>
+		<item value="dummy_byte"/>
+		<item value="GPIO_B"/>
+		<item value="SPI_Per"/>
+		<item value="GPIOx"/>
+		<item value="GPIOD"/>
+		<item value="GPIOC"/>
+		<item value="GPIOB"/>
+		<item value="GPIOA"/>
+		<item value="RESET"/>
+		<item value="SPI"/>
+	</list>
+	<list key="replacehistory">
+		<item value="ack_byte"/>
+		<item value="command_code"/>
+		<item value="dummy_write"/>
+		<item value="SPIx"/>
+		<item value="SPI4"/>
+		<item value="SPI3"/>
+		<item value="SPI2"/>
+		<item value="SPI1"/>
+		<item value="SPI3_PCLK"/>
+		<item value="SPI2_PCLK"/>
+		<item value="SPI1_PCLK"/>
+		<item value="pSPIx == SPI"/>
+		<item value="PCLK"/>
+		<item value="Offset: 0x"/>
+		<item value="TASK_READY_STATE"/>
+	</list>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value=""/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="0x8000a3d"/>
+			<item value="SVC"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="588"/>
+		<item key="DIALOG_Y_ORIGIN" value="206"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="400"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+</section>

@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 5, 2025
+ *      Author: mauricewashington
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+int main(){
+
+
+
+	uint8_t someData[10] = {0xff,0xff,0xff};
+
+
+
+
+	return 0;
+}

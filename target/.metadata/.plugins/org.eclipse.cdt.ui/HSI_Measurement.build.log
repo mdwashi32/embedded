@@ -1,0 +1,9 @@
+15:46:42 **** Clean-only build of configuration Debug for project HSI_Measurement ****
+make -j11 clean 
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf HSI_Measurement.elf HSI_Measurement.list HSI_Measurement.map default.size.stdout
+ 
+
+15:46:42 Build Finished. 0 errors, 0 warnings. (took 130ms)
+

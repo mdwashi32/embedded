@@ -1,0 +1,19 @@
+/*
+ * student.h
+ *
+ *  Created on: Mar 5, 2025
+ *      Author: mauricewashington
+ */
+
+#ifndef STUDENT_H_
+#define STUDENT_H_
+
+typedef struct{
+	uint32_t rollNumber;
+	char 	name[20];
+	char 	branch[50];
+	char	dob[15];
+	uint8_t	semester;
+}STUDENT_INFO_t;
+
+#endif /* STUDENT_H_ */

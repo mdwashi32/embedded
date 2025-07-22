@@ -1,0 +1,12 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Average,org.eclipse.launchbar.core.descriptorType.default\:pointer,org.eclipse.launchbar.core.descriptorType.default\:decision_making,org.eclipse.launchbar.core.descriptorType.default\:bitwise,org.eclipse.launchbar.core.descriptorType.default\:loop_practice,org.eclipse.launchbar.core.descriptorType.default\:pyramid,org.eclipse.launchbar.core.descriptorType.default\:dataAlignment,org.eclipse.launchbar.core.descriptorType.default\:structPacket,org.eclipse.launchbar.core.descriptorType.default\:structPacketBitfield,org.eclipse.launchbar.core.descriptorType.default\:union,org.eclipse.launchbar.core.descriptorType.default\:unionBitExtraction,org.eclipse.launchbar.core.descriptorType.default\:arrays,org.eclipse.launchbar.core.descriptorType.default\:arrayFunction,org.eclipse.launchbar.core.descriptorType.default\:array_swap,org.eclipse.launchbar.core.descriptorType.default\:stringVarVSstringLiteralConst,org.eclipse.launchbar.core.descriptorType.default\:studentRecords_stringsExcercise
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Average/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Average/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:pointer/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:pointer/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:pyramid/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:pyramid/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:stringVarVSstringLiteralConst/activeLaunchMode=run

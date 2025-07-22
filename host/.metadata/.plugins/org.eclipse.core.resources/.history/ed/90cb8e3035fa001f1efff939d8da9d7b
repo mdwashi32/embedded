@@ -1,0 +1,118 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 5, 2025
+ *      Author: mauricewashington
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+#include "student.h"
+
+int main() {
+
+	uint8_t choice = 0;
+	STUDENT_INFO_t studentRecords[10];
+	uint8_t recordLength = sizeof(studentRecords)/sizeof(studentRecords[0]);
+	uint8_t count = 0;
+	for(int i = 0; i < recordLength; i++){
+		studentRecords[i].name = " ";
+		studentRecords[i].rollNumber = 0;
+		studentRecords[i].branch = " ";
+		studentRecords[i].dob = " ";
+		studentRecords[i].semester = 0;
+
+	}
+
+
+	printf("Student Record Management Program\n");
+	do{
+		printf("==============================\n");
+		printf("Display all records --->1\n");
+		printf("Add a new record    --->2\n");
+		printf("Delete a record     --->3\n");
+		printf("Exit application --->0\n");
+		printf("Please select an option:\n");
+
+		scanf(" %u",&choice);
+
+		switch(choice){
+			case 1:
+				printf("Displaying student records:\n");
+				if (studentRecords[0].rollNumber == 0){
+					printf("Sorry, no students have been added yet.\n");
+					break;
+				}
+				else{
+					for (int i = 0; i < recordLength; i++){
+						if(studentRecords[i].rollNumber != 0){
+							printf("==============================\n");
+							printf("Student #%u\n",studentRecords[i].rollNumber);
+							printf("Name: %s\n",studentRecords[i].name);
+							printf("Department: %s\n",studentRecords[i].branch);
+							printf("Date of Birth: %s\n",studentRecords[i].dob);
+							printf("Semester: %u\n",studentRecords[i].semester);
+							printf("==============================\n");
+						}
+					}
+				}
+				break;
+			case 2:
+				if(count >= recordLength){
+					printf("Sorry, no more room for new students\n");
+					break;
+				}
+				printf("Please input new student record:\n");
+				printf("Student #, Name, Department, Date of Birth, Semester (enter after each value):\n");
+				scanf(" %u", &studentRecords[count].rollNumber);
+
+				for(int i = 0; i < recordLength; i++){
+					if(studentRecords[count].rollNumber == studentRecords[i].rollNumber){
+						printf("Sorry, no duplicates allowed\n");
+						break;
+					}
+				}
+				scanf(" %[^\n]s", studentRecords[count].name);
+				scanf(" %[^\n]s", studentRecords[count].branch);
+				scanf(" %[^\n]s", studentRecords[count].dob);
+				scanf(" %u", &studentRecords[count].semester);
+
+				count++;
+				printf("Student added successfully");
+				break;
+			case 3:
+				printf("Please input a student record to delete:\n");
+			case 0:
+				printf("Exiting...");
+				break;
+			default:
+				printf("Please input a valid option from the list\n");
+				break;
+		}
+
+
+
+
+
+
+
+	}while(choice != 0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	return 0;
+}
+
+

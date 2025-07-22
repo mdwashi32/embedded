@@ -1,0 +1,36 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 2, 2025
+ *      Author: mauricewashington
+ */
+
+
+#include <stdio.h>
+#include <stdint.h>
+
+union address{
+	uint16_t shortAddr;
+	uint32_t longAddr;
+};
+
+
+
+int main(){
+
+	union Address addr;
+	addr.shortAddr = 0xABCD;
+	addr.longAddr = 0xEEEECCCC;
+
+	printf("%#X", addr.shortAddr);
+	printf("%#X", addr.longAddr);
+
+
+
+
+
+
+
+
+	return 0;
+}

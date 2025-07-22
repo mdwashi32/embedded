@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 5, 2025
+ *      Author: mauricewashington
+ */
+
+#include <stdio.h>
+
+int main(){
+
+
+
+	char msg1[] = "Hello how are you?";
+	printf("Messahe is : %s\n",msg1);
+
+	return 0;
+}
+

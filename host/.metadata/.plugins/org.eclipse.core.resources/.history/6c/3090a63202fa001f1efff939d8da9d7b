@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 5, 2025
+ *      Author: mauricewashington
+ */
+#include <stdint.h>
+#include <stdio.h>
+
+void array_swap(uint32_t* pArray1,uint32_t* pArray1, uint8_t len1, uint8_t len2);
+
+
+
+int main(){
+
+
+
+
+
+
+
+
+
+
+
+	return 0;
+}
+
+void array_swap(uint32_t* pArray1,uint32_t* pArray1, uint8_t len1, uint8_t len2){
+	if (len1 != len2){
+		printf("Array lengths are not equivalent! Cannot proceed!\n");
+	}
+}

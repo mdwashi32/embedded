@@ -1,0 +1,34 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 5, 2025
+ *      Author: mauricewashington
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+int main(){
+
+
+
+	uint8_t someData[] = {0xff,0xff,0xff};
+	uint8_t size = sizeof(someData)/sizeof(uint8_t);
+
+	printf("Array length: %u",size);
+
+
+	int length = 10;
+	uint8_t someOtherData[length];
+
+	someOtherData[2] = 2;
+	*(someOtherData + 1) = 3;
+
+	for(int i = 0; i < length; i++){
+		printf("Array element %u is %u.\n",i,someOtherData[i]);
+	}
+
+
+
+
+	return 0;
+}

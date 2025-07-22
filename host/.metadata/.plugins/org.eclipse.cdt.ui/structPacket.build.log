@@ -1,0 +1,8 @@
+18:41:18 **** Clean-only build of configuration Debug for project structPacket ****
+make clean 
+rm -rf ./main.d ./main.o
+rm -rf structPacket
+ 
+
+18:41:18 Build Finished. 0 errors, 0 warnings. (took 126ms)
+

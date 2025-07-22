@@ -1,0 +1,59 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 2, 2025
+ *      Author: mauricewashington
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+struct Packet{
+	uint8_t crc; // 2 bits @ bit 0
+	uint8_t status; // 1 bit @ bit 2
+	uint16_t payload; // 12 bits @ bit 3
+	uint8_t bat; // 3 bits @ bit 15
+	uint8_t sensor; // 3 bits @ bit 18
+	uint8_t longAddr; // 8 bits @ bit 21
+	uint8_t shortAddr; // 2 bits @ bit 29
+	uint8_t addrMode; // 1 bit @ bit 31
+
+};
+
+void packetInformation(struct Packet *ptr);
+
+int main(){
+	struct Packet packetCapture;
+	struct Packet *pPacket = &packetCapture;
+
+	packetInformation(pPacket);
+
+	return 0;
+}
+
+void packetInformation(struct Packet *ptr){
+	uint32_t userInput = 0xFFFFFFFF;
+
+	printf("Please enter a 32 bit packet in hexidecimal format\n");
+	scanf(" %X",&userInput);
+
+	ptr->crc = (userInput >> 0) & (0x3);
+	ptr->status = (userInput >> 2) & (0x1);
+	ptr->payload = (userInput >> 3) & (0xFFF);
+	ptr->bat = (userInput >> 15) & (0x7);
+	ptr->sensor = (userInput >> 18) & (0x7);
+	ptr->longAddr = (userInput >> 21) & (0xFF);
+	ptr->shortAddr = (userInput >> 29) & (0x3);
+	ptr->addrMode = (userInput >> 31) & (0x1);
+	printf("Packet information for %X\n",userInput);
+	printf("================================\n",userInput);
+	printf("crc\t\t:%X\n",ptr->crc);
+	printf("status\t\t:%X\n",ptr->status);
+	printf("payload\t\t:%X\n",ptr->payload);
+	printf("bat\t\t:%X\n",ptr->bat);
+	printf("sensor\t\t:%X\n",ptr->sensor);
+	printf("longAddr\t\t:%X\n",ptr->longAddr);
+	printf("shortAddr\t\t:%X\n",ptr->shortAddr);
+	printf("addrMode\t\t:%X\n",ptr->addrMode);
+
+}

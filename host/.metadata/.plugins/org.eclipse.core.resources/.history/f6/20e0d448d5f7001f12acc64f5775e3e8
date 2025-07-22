@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 2, 2025
+ *      Author: mauricewashington
+ */
+
+#include <stdio.h>
+#include <stdint.h>
+
+struct Packet{
+	uint8_t crc; // 2 bits @ bit 0
+	uint8_t status; // 1 bit @ bit 2
+	uint16_t payload; // 12 bits @ bit 3
+	uint8_t bat; // 3 bits @ bit 15
+	uint8_t sensor; // 3 bits @ bit 18
+	uint8_t longAddr; // 8 bits @ bit 21
+	uint8_t shortAddr; // 2 bits @ bit 29
+	uint8_t addrMode; // 1 bit @ bit 31
+
+};
+int main(){
+	uint32_t user_input = 0xFFFFFFFF;
+
+	printf("Please enter a 32 bit packet in hexidecimal format\n");
+	scanf(" %X",&user_input);
+
+
+	return 0;
+}

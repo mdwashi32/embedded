@@ -1,0 +1,88 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 2, 2025
+ *      Author: mauricewashington
+ */
+
+
+#include <stdint.h>
+#include <stdio.h>
+
+struct DataSet{
+	char data1;
+	int data2;
+	char data3;
+	short data4;
+};
+
+struct DataPacked{
+	char data5;
+	int data6;
+	char data7;
+	short data8;
+}__attribute__((packed)); //do not consider byte width when assigning values to memory locations
+
+typedef struct{
+	char data1;
+	int data2;
+	char data3;
+	short data4;
+}DATASET2_t;
+
+void displayMemberElements(struct DataSet *pdata);
+
+int main(){
+	struct DataSet data;
+
+	data.data1 = 0x11;
+	data.data2 = 0xFFFFEEEE;
+	data.data3 = 0x22;
+	data.data4 = 0xABCD;
+
+	uint8_t *ptr = (unint8_t*)&data;
+
+	//modify first element
+	*ptr = 0x55;
+
+	//modify second element
+	// tedious using above method
+
+	//instead make pointer of struct type
+	struct DataSet *pData;
+
+	//pData now holds the address of structure variable data
+	pData = &data;
+
+	//changing the value of data1 member element
+	pData->data1 = 0x55; //pData->data1 *(address_of_first_member_element_data) = 0x55. '->' is for dereferencing structure pointer only
+
+	uint8_t *ptr;
+	ptr = (uint8_t*)&data;
+
+	displayMemberElements(ptr);
+//	uint32_t totalSize = sizeof(struct DataSet);
+//
+//	printf("Memory address            Content\n");
+//	printf("===================================\n");
+//
+//	for (uint32_t i = 0; i < totalSize; i++){
+//		printf("%p , %X\n", ptr, *ptr);
+//		ptr++;
+//	}
+//
+//
+//	printf("Total memory consumed by this struct variable is %d\n", totalSize);
+//
+//
+//	getchar();
+
+
+}
+
+void displayMemberElements(struct DataSet *pdata){
+	printf("data1 = %X\n",pdata->data1);
+	printf("data2 = %X\n",pdata->data2);
+	printf("data3 = %X\n",pdata->data3);
+	printf("data4 = %X\n",pdata->data4);
+}
