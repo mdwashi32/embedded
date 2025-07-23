@@ -6,7 +6,7 @@ The examples include low-level peripheral programming for STM32 microcontrollers
 
 ## Acknowledgments
 
-Some of the source files are based on coursework from the following Udemy course:
+Some of the source files are based on coursework from the following Udemy courses:
 
 **Courses**: 
 - [Microcontroller Embedded C Programming: Absolute Beginners](https://www.udemy.com/course/microcontroller-embedded-c-programming/) — FastBit Embedded Brain Academy
