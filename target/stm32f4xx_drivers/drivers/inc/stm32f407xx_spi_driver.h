@@ -11,7 +11,7 @@
 
 
 /*
- * Configuration structure for SPI
+ * Configuration structure for SPIx peripheral
  */
 
 typedef struct
@@ -26,7 +26,7 @@ typedef struct
 }SPI_Config_t;
 
 /*
- * Handle Structure for SPI
+ * Handle Structure for SPIx peripheral
  */
 typedef struct
 {

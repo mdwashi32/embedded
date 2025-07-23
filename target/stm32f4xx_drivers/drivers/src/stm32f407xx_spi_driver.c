@@ -18,7 +18,7 @@ static void spi_ovr_err_interrupt_handle(SPI_Handle_t *pSPIHandle);
  * FUNCTION DETAILS
  * 	@function				-	SPI_PeriClockControl
  *
- * 	@brief					-	This function enables or disables peripheral clock for given SPI port
+ * 	@brief					-	This function enables or disables peripheral clock for given SPI peripheral
  *
  * 	@param[in]				-	Base address of SPI peripheral
  * 	@param[in]				-	ENABLE OR DISABLE (macro)

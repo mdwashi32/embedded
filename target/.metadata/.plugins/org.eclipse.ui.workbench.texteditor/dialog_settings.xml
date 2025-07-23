@@ -3,6 +3,8 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="ReadByte"/>
+		<item value="SSOE"/>
 		<item value="IRQHan"/>
 		<item value="IRQ"/>
 		<item value="SPI4"/>
@@ -16,8 +18,6 @@
 		<item value="GPIOC"/>
 		<item value="GPIOB"/>
 		<item value="GPIOA"/>
-		<item value="RESET"/>
-		<item value="SPI"/>
 	</list>
 	<list key="replacehistory">
 		<item value="ack_byte"/>
