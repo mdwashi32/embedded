@@ -102,7 +102,7 @@ uint32_t RCC_GetPLLOutputClock(void) /**** Not implemented ***/
 
 uint16_t AHB_PreScaler[8] = {2,4,8,16,64,128,256,512};
 
-uint32_t RCC_GetPCLK1Value(void)
+uint32_t RCC_GetPCLK11Value(void)
 {
 	uint32_t pclk1,SystemClk;
 

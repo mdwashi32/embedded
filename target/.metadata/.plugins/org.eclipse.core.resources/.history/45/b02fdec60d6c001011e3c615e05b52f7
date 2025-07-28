@@ -102,7 +102,7 @@ uint32_t RCC_GetPLLOutputClock(void) /**** Not implemented ***/
 
 uint16_t AHB_PreScaler[8] = {2,4,8,16,64,128,256,512};
 
-uint32_t RCC_GetPCLK1Value(void)
+uint32_t RCC_GetPCLKValue(void)
 {
 	uint32_t pclk1,SystemClk;
 
@@ -168,15 +168,14 @@ uint32_t RCC_GetPCLK1Value(void)
  *************************************************************************************************************/
 void I2C_Init(I2C_Handle_t *pI2CHandle)
 {
-	uint32_t tempreg = 0;
-
 	// ACK control bit
+	uint32_t tempreg = 0;
 	tempreg |= pI2CHandle->I2C_Config.I2C_ACKControl << 10;
 	pI2CHandle->pI2Cx->CR1 = tempreg;
 
 	// FREQ Configuration
 	tempreg = 0;
-	tempreg |= RCC_GetPCLK1Value() / 1000000U;
+	tempreg |= RCC_GetPCLKValue() / 1000000U;
 	pI2CHandle->pI2Cx->CR2 = (tempreg & 0x3F); // mask all except first 5 bits
 
 	// Device Own Address Configuration (OAR1)
@@ -192,7 +191,7 @@ void I2C_Init(I2C_Handle_t *pI2CHandle)
 	if(pI2CHandle->I2C_Config.I2C_SCLSpeed <= I2C_SCL_SPEED_SM)
 	{
 		// standard mode
-		ccr_value =(RCC_GetPCLK1Value() / (2 * pI2CHandle->I2C_Config.I2C_SCLSpeed));
+		ccr_value =(RCC_GetPCLKValue() / (2 * pI2CHandle->I2C_Config.I2C_SCLSpeed));
 		tempreg |= (ccr_value & 0xFFF);
 	}
 	else
@@ -202,31 +201,17 @@ void I2C_Init(I2C_Handle_t *pI2CHandle)
 		tempreg |= (pI2CHandle->I2C_Config.I2C_FMDutyCycle << 14);
 		if(pI2CHandle->I2C_Config.I2C_FMDutyCycle == I2C_FM_DUTY_2)
 		{
-			ccr_value = (RCC_GetPCLK1Value() / (3 * pI2CHandle->I2C_Config.I2C_SCLSpeed));
+			ccr_value = (RCC_GetPCLKValue() / (3 * pI2CHandle->I2C_Config.I2C_SCLSpeed));
 		}
 		else
 		{
-			ccr_value = (RCC_GetPCLK1Value() / (25 * pI2CHandle->I2C_Config.I2C_SCLSpeed));
+			ccr_value = (RCC_GetPCLKValue() / (25 * pI2CHandle->I2C_Config.I2C_SCLSpeed));
 		}
 		tempreg |= (ccr_value & 0xFFF);
 	}
 	pI2CHandle->pI2Cx->CCR = tempreg;
 
 	//TRISE Configuration
-	tempreg = 0;
-
-	if(pI2CHandle->I2C_Config.I2C_SCLSpeed <= I2C_SCL_SPEED_SM)
-	{
-		// standard mode
-		tempreg = (RCC_GetPCLK1Value() / 1000000U) + 1;
-	}
-	else
-	{
-		// fast mode
-		tempreg = ((RCC_GetPCLK1Value() * 300U) / 1000000000U) + 1;
-	}
-
-	pI2CHandle->pI2Cx->TRISE = (tempreg & 0x3F);
 }
 
 /*************************************************************************************************************

@@ -1,4 +1,4 @@
-15:57:16 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+16:57:24 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
 make -j11 all 
 arm-none-eabi-gcc "../drivers/src/stm32f407xx_i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/src/stm32f407xx_i2c_driver.d" -MT"drivers/src/stm32f407xx_i2c_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_i2c_driver.o"
 arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -13,5 +13,5 @@ Finished building: default.size.stdout
 Finished building: stm32f4xx_drivers.list
  
 
-15:57:16 Build Finished. 0 errors, 0 warnings. (took 441ms)
+16:57:25 Build Finished. 0 errors, 0 warnings. (took 338ms)
 
