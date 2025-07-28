@@ -62,7 +62,7 @@ typedef struct
 #define I2C_ARLO_FLAG					(1 << I2C_SR1_ARLO)
 #define I2C_AF_FLAG						(1 << I2C_SR1_AF)
 #define I2C_OVR_FLAG					(1 << I2C_SR1_OVR)
-#define I2C_TIMEOUT_FLAG				(1 << I2C_SR1_TIMEOUT) //aka Tlow error
+#define I2C_TIMEOUT_FLAG				(1 << I2C_SR1_TIMEOUT)
 
 
 
