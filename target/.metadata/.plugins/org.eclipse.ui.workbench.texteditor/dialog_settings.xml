@@ -3,6 +3,9 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="RCC_GetPCLK1"/>
+		<item value="RCC_GetPCLK"/>
+		<item value="ADDR"/>
 		<item value="PeripheralControl"/>
 		<item value="Peripheral"/>
 		<item value="peripheral"/>
@@ -15,11 +18,9 @@
 		<item value="ackbyte"/>
 		<item value="commandcode"/>
 		<item value="dummy_byte"/>
-		<item value="GPIO_B"/>
-		<item value="SPI_Per"/>
-		<item value="GPIOx"/>
 	</list>
 	<list key="replacehistory">
+		<item value="RCC_GetPCLK1"/>
 		<item value="I2C"/>
 		<item value="ack_byte"/>
 		<item value="command_code"/>
@@ -34,7 +35,6 @@
 		<item value="SPI1_PCLK"/>
 		<item value="pSPIx == SPI"/>
 		<item value="PCLK"/>
-		<item value="Offset: 0x"/>
 	</list>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item key="selection" value=""/>

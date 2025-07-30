@@ -10509,3 +10509,77 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/mauri
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-07-28 11:04:08.704
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-07-29 11:18:58.334 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/mauricewashington/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/mauricewashington/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-07-29 11:19:14.262
+!MESSAGE Log4j2 initialized with config file /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-07-29 11:19:23.188
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-29 13:29:09.371
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-29 13:31:10.092
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-29 14:00:34.203
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-29 14:06:32.791
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-29 14:07:03.849
+!MESSAGE Target not available.
+!SESSION 2025-07-29 14:08:17.626 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/mauricewashington/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/mauricewashington/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-07-29 14:08:22.222
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-07-29 14:08:25.936
+!MESSAGE Log4j2 initialized with config file /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-07-29 14:08:33.638
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-07-29 14:15:51.058 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/mauricewashington/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/mauricewashington/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-07-29 14:15:56.561
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-07-29 14:16:00.201
+!MESSAGE Log4j2 initialized with config file /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-07-29 14:16:07.851
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-29 15:01:42.631
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-29 15:19:26.205
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-07-29 17:14:10.855
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.actions.DsfSuspendCommand$4$1@2eb1980e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Interrupt failed.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2025-07-29 17:14:10.855
+!MESSAGE Interrupt failed.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-29 17:38:54.487
+!MESSAGE Target not available.

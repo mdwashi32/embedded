@@ -170,9 +170,12 @@ void I2C_Init(I2C_Handle_t *pI2CHandle)
 {
 	uint32_t tempreg = 0;
 
-	// ACK control bit
-	tempreg |= pI2CHandle->I2C_Config.I2C_ACKControl << 10;
-	pI2CHandle->pI2Cx->CR1 = tempreg;
+	// Enable clock for I2Cx peripheral
+	I2C_PeriClockControl(pI2CHandle->pI2Cx, ENABLE);
+
+//	// ACK control bit < -- broken, Cannot set ACK when PE = 0, moved to I2C_Peripheral Control
+//	tempreg |= pI2CHandle->I2C_Config.I2C_ACKControl << 10;
+//	pI2CHandle->pI2Cx->CR1 = tempreg;
 
 	// FREQ Configuration
 	tempreg = 0;
@@ -226,7 +229,8 @@ void I2C_Init(I2C_Handle_t *pI2CHandle)
 		tempreg = ((RCC_GetPCLK1Value() * 300U) / 1000000000U) + 1;
 	}
 
-	pI2CHandle->pI2Cx->TRISE = (tempreg & 0x3F);
+	pI2CHandle->pI2Cx->TRISE = 0;
+	pI2CHandle->pI2Cx->TRISE |= (tempreg & 0x3F);
 }
 
 /*************************************************************************************************************
@@ -326,7 +330,7 @@ void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t L
 	//	 Note: TXE=1 , BTF=1 , means that both SR and DR are empty and next transmission should begin
 	//	 When BTF=1 , SCL will be stretched (pulled LOW)
 
-	while(!I2C_GetFlagStatus(pI2CHandle->pI2Cx, I2C_TXE_FLAG)); // Wait for TXE to be set
+	//while(!I2C_GetFlagStatus(pI2CHandle->pI2Cx, I2C_TXE_FLAG)); // Wait for TXE to be set
 
 	while(!I2C_GetFlagStatus(pI2CHandle->pI2Cx, I2C_BTF_FLAG)); // Wait for TXE to be set
 
@@ -444,6 +448,9 @@ void I2C_PeripheralControl(I2C_RegDef_t *pI2Cx, uint8_t EnOrDi)
 	if(EnOrDi == ENABLE)
 	{
 		pI2Cx->CR1 |= (1 << I2C_CR1_PE);
+
+		// Can enable ACK now that PE = 1, moved from I2C_Init
+		pI2Cx->CR1 |= (1 << 10); // ACK set at position 10 in CR1
 	}
 	else
 	{

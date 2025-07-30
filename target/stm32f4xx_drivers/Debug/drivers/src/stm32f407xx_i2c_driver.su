@@ -6,9 +6,9 @@
 ../drivers/src/stm32f407xx_i2c_driver.c:97:10:RCC_GetPLLOutputClock	4	static
 ../drivers/src/stm32f407xx_i2c_driver.c:105:10:RCC_GetPCLK1Value	24	static
 ../drivers/src/stm32f407xx_i2c_driver.c:169:6:I2C_Init	24	static
-../drivers/src/stm32f407xx_i2c_driver.c:247:6:I2C_DeInit	16	static
-../drivers/src/stm32f407xx_i2c_driver.c:267:9:I2C_GetFlagStatus	16	static
-../drivers/src/stm32f407xx_i2c_driver.c:291:6:I2C_MasterSendData	24	static
-../drivers/src/stm32f407xx_i2c_driver.c:361:6:I2C_IRQInterruptConfig	16	static
-../drivers/src/stm32f407xx_i2c_driver.c:416:6:I2C_IRQPriorityConfig	24	static
-../drivers/src/stm32f407xx_i2c_driver.c:442:6:I2C_PeripheralControl	16	static
+../drivers/src/stm32f407xx_i2c_driver.c:251:6:I2C_DeInit	16	static
+../drivers/src/stm32f407xx_i2c_driver.c:271:9:I2C_GetFlagStatus	16	static
+../drivers/src/stm32f407xx_i2c_driver.c:295:6:I2C_MasterSendData	24	static
+../drivers/src/stm32f407xx_i2c_driver.c:365:6:I2C_IRQInterruptConfig	16	static
+../drivers/src/stm32f407xx_i2c_driver.c:420:6:I2C_IRQPriorityConfig	24	static
+../drivers/src/stm32f407xx_i2c_driver.c:446:6:I2C_PeripheralControl	16	static
