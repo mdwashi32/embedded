@@ -404,7 +404,7 @@ void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t
 	{
 		// Disable ACK in CR1
 
-		I2C_ACK_EN_DI(pI2CHandle->pI2Cx, DISABLE); // Clear ACK bit
+		I2C_ACK_EN_DI(pI2CHandle->pI2Cx,DISABLE); // Clear ACK bit
 
 		// Clear ADDR flag
 
@@ -414,13 +414,13 @@ void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t
 
 		while(!I2C_GetFlagStatus(pI2CHandle->pI2Cx, I2C_RXNE_FLAG));
 
-		// Generate STOP condition, Can also be moved to right after disabling ACK
+		// Generate STOP condition
 
 		I2C_GenerateStopCondition(pI2CHandle->pI2Cx);
 
 		// Read data into buffer
 
-		*pRxBuffer = pI2CHandle->pI2Cx->DR;
+
 
 		return;
 	}
@@ -429,44 +429,27 @@ void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t
 	if(Len > 1)
 	{
 		// Clear ADDR flag
-
 		I2C_ClearADDRFlag(pI2CHandle->pI2Cx);
 
 		// Read data until Len = 0
-
 		for(uint32_t i = Len; i > 0; i--)
 		{
 			// Wait until RXNE = 1
-
 			while(!I2C_GetFlagStatus(pI2CHandle->pI2Cx, I2C_RXNE_FLAG));
 
-			if(i == 2) // Last 2 bytes
+			if(i == 2) // Last 2 bytes, will reduce length to 1 after this iteration
 			{
 				// Disable ACK (CR1) here to prevent slave from sending more data after last byte read
-
 				I2C_ACK_EN_DI(pI2CHandle->pI2Cx,DISABLE); // Clear ACK bit
 
-				// Generate STOP condition
-
-				I2C_GenerateStopCondition(pI2CHandle->pI2Cx);
+				// increment RxBuffer address
 
 			}
-			// Read data into buffer
-
-			*pRxBuffer = pI2CHandle->pI2Cx->DR;
-
-			// increment RxBuffer address
-
-			pRxBuffer++;
 		}
 	}
 
-	// Re-Enable ACK in CR1 (if it was enabled before entering current API)
+	// Re-Enable ACK in CR1
 
-	if(pI2CHandle->I2C_Config.I2C_ACKControl == I2C_ACK_EN)
-	{
-		I2C_ACK_EN_DI(pI2CHandle->pI2Cx,ENABLE); // Set ACK bit
-	}
 }
 
 /*

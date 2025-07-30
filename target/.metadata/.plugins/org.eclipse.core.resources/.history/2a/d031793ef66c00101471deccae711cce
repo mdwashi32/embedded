@@ -15,7 +15,6 @@ static void I2C_Write_ExecuteAddressPhase(I2C_RegDef_t *pI2Cx, uint8_t SlaveAddr
 static void I2C_Read_ExecuteAddressPhase(I2C_RegDef_t *pI2Cx, uint8_t SlaveAddr);
 static void I2C_ClearADDRFlag(I2C_RegDef_t *pI2Cx);
 static void I2C_GenerateStopCondition(I2C_RegDef_t *pI2Cx);
-static void I2C_ACK_EN_DI(I2C_RegDef_t *pI2Cx, uint8_t EnOrDi);
 
 
 static void I2C_GenerateStartCondition(I2C_RegDef_t *pI2Cx)
@@ -48,19 +47,6 @@ static void I2C_GenerateStopCondition(I2C_RegDef_t *pI2Cx)
 {
 	pI2Cx->CR1 |= ( 1 << I2C_CR1_STOP);
 }
-
-static void I2C_ACK_EN_DI(I2C_RegDef_t *pI2Cx, uint8_t EnOrDi)
-{
-	if(EnOrDi == ENABLE)
-	{
-		pI2Cx->CR1 |= (1 << I2C_CR1_ACK);
-	}
-	else
-	{
-		pI2Cx->CR1 &= ~(1 << I2C_CR1_ACK);
-	}
-}
-
 /*
  * Peripheral Clock Setup
  */
@@ -399,28 +385,21 @@ void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t
 	while(!I2C_GetFlagStatus(pI2CHandle->pI2Cx, I2C_ADDR_FLAG));
 
 	// If reading only one byte from slave
-
 	if(Len == 1)
 	{
 		// Disable ACK in CR1
-
-		I2C_ACK_EN_DI(pI2CHandle->pI2Cx, DISABLE); // Clear ACK bit
+		pI2CHandle->pI2Cx &= ~(1 << I2C_CR1_ACK); // Clear ACK bit
 
 		// Clear ADDR flag
-
 		I2C_ClearADDRFlag(pI2CHandle->pI2Cx);
 
 		// Wait until RXNE = 1
-
 		while(!I2C_GetFlagStatus(pI2CHandle->pI2Cx, I2C_RXNE_FLAG));
 
-		// Generate STOP condition, Can also be moved to right after disabling ACK
-
+		// Generate STOP condition
 		I2C_GenerateStopCondition(pI2CHandle->pI2Cx);
 
 		// Read data into buffer
-
-		*pRxBuffer = pI2CHandle->pI2Cx->DR;
 
 		return;
 	}
@@ -430,43 +409,23 @@ void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t
 	{
 		// Clear ADDR flag
 
-		I2C_ClearADDRFlag(pI2CHandle->pI2Cx);
-
 		// Read data until Len = 0
-
 		for(uint32_t i = Len; i > 0; i--)
 		{
 			// Wait until RXNE = 1
 
-			while(!I2C_GetFlagStatus(pI2CHandle->pI2Cx, I2C_RXNE_FLAG));
-
-			if(i == 2) // Last 2 bytes
+			if(i == 2) // Last 2 bytes, will reduce length to 1 after this iteration
 			{
 				// Disable ACK (CR1) here to prevent slave from sending more data after last byte read
 
-				I2C_ACK_EN_DI(pI2CHandle->pI2Cx,DISABLE); // Clear ACK bit
-
-				// Generate STOP condition
-
-				I2C_GenerateStopCondition(pI2CHandle->pI2Cx);
+				// increment RxBuffer address
 
 			}
-			// Read data into buffer
-
-			*pRxBuffer = pI2CHandle->pI2Cx->DR;
-
-			// increment RxBuffer address
-
-			pRxBuffer++;
 		}
 	}
 
-	// Re-Enable ACK in CR1 (if it was enabled before entering current API)
+	// Re-Enable ACK in CR1
 
-	if(pI2CHandle->I2C_Config.I2C_ACKControl == I2C_ACK_EN)
-	{
-		I2C_ACK_EN_DI(pI2CHandle->pI2Cx,ENABLE); // Set ACK bit
-	}
 }
 
 /*
@@ -575,7 +534,7 @@ void I2C_PeripheralControl(I2C_RegDef_t *pI2Cx, uint8_t EnOrDi)
 		pI2Cx->CR1 |= (1 << I2C_CR1_PE);
 
 		// Can enable ACK now that PE = 1, moved from I2C_Init
-		I2C_ACK_EN_DI(pI2Cx,ENABLE);
+		pI2Cx->CR1 |= (1 << I2C_CR1_ACK);
 	}
 	else
 	{
