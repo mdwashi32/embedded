@@ -99,16 +99,16 @@ int main(void)
 		delay();
 
 		// Write opcode 0x51 to receive one byte (length information) from Slave to Slave
- 		I2C_MasterSendData(&I2C1Handle, &one_byte_cmd, 1, SLAVE_ADDR, I2C_SR);
+ 		I2C_MasterSendData(&I2C1Handle, &one_byte_cmd, 1, SLAVE_ADDR);
 
  		// Read 1 byte of data from Slave to determine length of data
- 		I2C_MasterReceiveData(&I2C1Handle, &length, 1, SLAVE_ADDR, I2C_SR);
+ 		I2C_MasterReceiveData(&I2C1Handle, &length, 1, SLAVE_ADDR);
 
  		// Write opcode to receive all bytes from Slave to Slave
-		I2C_MasterSendData(&I2C1Handle, &all_byte_cmd, 1, SLAVE_ADDR, I2C_SR);
+		I2C_MasterSendData(&I2C1Handle, &all_byte_cmd, 1, SLAVE_ADDR);
 
 		// Read "length" bytes of data from Slave
-		I2C_MasterReceiveData(&I2C1Handle, readByte, length, SLAVE_ADDR, I2C_SR);
+		I2C_MasterReceiveData(&I2C1Handle, readByte, length, SLAVE_ADDR);
 	}
 
 	while(1);

@@ -1129,3 +1129,67 @@ arm-none-eabi-size  stm32f4xx_drivers.elf
    3868	     36	   1612	   5516	   158c	stm32f4xx_drivers.elf
 Finished building: default.size.stdout
  
+17:47:07 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/src/stm32f407xx_gpio_driver.d" -MT"drivers/src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/src/stm32f407xx_i2c_driver.d" -MT"drivers/src/stm32f407xx_i2c_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_i2c_driver.o"
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_spi_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/src/stm32f407xx_spi_driver.d" -MT"drivers/src/stm32f407xx_spi_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_spi_driver.o"
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+../Src/011i2c_master_rx_testing.c: In function 'main':
+../Src/011i2c_master_rx_testing.c:102:17: error: too few arguments to function 'I2C_MasterSendData'
+  102 |                 I2C_MasterSendData(&I2C1Handle, &one_byte_cmd, 1, SLAVE_ADDR);
+      |                 ^~~~~~~~~~~~~~~~~~
+In file included from /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx.h:538,
+                 from ../Src/011i2c_master_rx_testing.c:8:
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:91:6: note: declared here
+   91 | void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t Len, uint8_t SlaveAddr, uint8_t StartRepeated);
+      |      ^~~~~~~~~~~~~~~~~~
+../Src/011i2c_master_rx_testing.c:105:17: error: too few arguments to function 'I2C_MasterReceiveData'
+  105 |                 I2C_MasterReceiveData(&I2C1Handle, &length, 1, SLAVE_ADDR);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:92:6: note: declared here
+   92 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr, uint8_t StartRepeated);
+      |      ^~~~~~~~~~~~~~~~~~~~~
+../Src/011i2c_master_rx_testing.c:108:17: error: too few arguments to function 'I2C_MasterSendData'
+  108 |                 I2C_MasterSendData(&I2C1Handle, &all_byte_cmd, 1, SLAVE_ADDR);
+      |                 ^~~~~~~~~~~~~~~~~~
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:91:6: note: declared here
+   91 | void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t Len, uint8_t SlaveAddr, uint8_t StartRepeated);
+      |      ^~~~~~~~~~~~~~~~~~
+../Src/011i2c_master_rx_testing.c:111:17: error: too few arguments to function 'I2C_MasterReceiveData'
+  111 |                 I2C_MasterReceiveData(&I2C1Handle, readByte, length, SLAVE_ADDR);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:92:6: note: declared here
+   92 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr, uint8_t StartRepeated);
+      |      ^~~~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/011i2c_master_rx_testing.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+17:47:49 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3912	     36	   1612	   5560	   15b8	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+17:48:33 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3912	     36	   1612	   5560	   15b8	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+17:48:42 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3912	     36	   1612	   5560	   15b8	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
