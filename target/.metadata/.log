@@ -10583,3 +10583,28 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/mauri
 
 !ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-29 17:38:54.487
 !MESSAGE Target not available.
+!SESSION 2025-07-30 11:42:46.301 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/mauricewashington/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/mauricewashington/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-07-30 11:43:48.456
+!MESSAGE Log4j2 initialized with config file /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-07-30 11:43:55.563
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-30 17:01:41.562
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-30 17:02:29.463
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-30 17:03:20.188
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-07-30 17:11:37.631
+!MESSAGE Target not available.

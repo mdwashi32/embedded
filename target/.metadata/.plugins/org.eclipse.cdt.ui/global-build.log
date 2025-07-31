@@ -742,3 +742,390 @@ Finished building: default.size.stdout
  
 Finished building: stm32f4xx_drivers.list
  
+16:30:49 **** Clean-only build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 clean 
+rm -rf ./drivers/src/stm32f407xx_gpio_driver.cyclo ./drivers/src/stm32f407xx_gpio_driver.d ./drivers/src/stm32f407xx_gpio_driver.o ./drivers/src/stm32f407xx_gpio_driver.su ./drivers/src/stm32f407xx_i2c_driver.cyclo ./drivers/src/stm32f407xx_i2c_driver.d ./drivers/src/stm32f407xx_i2c_driver.o ./drivers/src/stm32f407xx_i2c_driver.su ./drivers/src/stm32f407xx_spi_driver.cyclo ./drivers/src/stm32f407xx_spi_driver.d ./drivers/src/stm32f407xx_spi_driver.o ./drivers/src/stm32f407xx_spi_driver.su
+rm -rf ./Startup/startup_stm32f407vgtx.d ./Startup/startup_stm32f407vgtx.o
+rm -rf ./Src/010i2c_master_tx_testing.cyclo ./Src/010i2c_master_tx_testing.d ./Src/010i2c_master_tx_testing.o ./Src/010i2c_master_tx_testing.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf default.size.stdout stm32f4xx_drivers.elf stm32f4xx_drivers.list stm32f4xx_drivers.map
+ 
+16:30:49 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/src/stm32f407xx_gpio_driver.d" -MT"drivers/src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/src/stm32f407xx_i2c_driver.d" -MT"drivers/src/stm32f407xx_i2c_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_i2c_driver.o"
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_spi_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/src/stm32f407xx_spi_driver.d" -MT"drivers/src/stm32f407xx_spi_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_spi_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/011i2c_master_rx_testing.c: In function 'main':
+../Src/011i2c_master_rx_testing.c:101:49: warning: passing argument 2 of 'I2C_MasterSendData' makes pointer from integer without a cast [-Wint-conversion]
+  101 |                 I2C_MasterSendData(&I2C1Handle, one_byte_cmd, 1, SLAVE_ADDR);
+      |                                                 ^~~~~~~~~~~~
+      |                                                 |
+      |                                                 uint8_t {aka unsigned char}
+In file included from /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx.h:538,
+                 from ../Src/011i2c_master_rx_testing.c:8:
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:88:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+   88 | void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t Len, uint8_t SlaveAddr);
+      |                                                   ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:104:40: error: 'pI2CHandle' undeclared (first use in this function); did you mean 'I2C1Handle'?
+  104 |                 I2C_MasterReceiveData(&pI2CHandle, &ReadByte, 1, SLAVE_ADDR);
+      |                                        ^~~~~~~~~~
+      |                                        I2C1Handle
+../Src/011i2c_master_rx_testing.c:104:40: note: each undeclared identifier is reported only once for each function it appears in
+../Src/011i2c_master_rx_testing.c:104:52: warning: passing argument 2 of 'I2C_MasterReceiveData' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  104 |                 I2C_MasterReceiveData(&pI2CHandle, &ReadByte, 1, SLAVE_ADDR);
+      |                                                    ^~~~~~~~~
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile char *'
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:107:49: warning: passing argument 2 of 'I2C_MasterSendData' makes pointer from integer without a cast [-Wint-conversion]
+  107 |                 I2C_MasterSendData(&I2C1Handle, all_byte_cmd, 1, SLAVE_ADDR);
+      |                                                 ^~~~~~~~~~~~
+      |                                                 |
+      |                                                 uint8_t {aka unsigned char}
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:88:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+   88 | void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t Len, uint8_t SlaveAddr);
+      |                                                   ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:110:52: warning: passing argument 2 of 'I2C_MasterReceiveData' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  110 |                 I2C_MasterReceiveData(&pI2CHandle, &ReadByte, 4, SLAVE_ADDR);
+      |                                                    ^~~~~~~~~
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile char *'
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/011i2c_master_rx_testing.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+16:31:19 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+../Src/011i2c_master_rx_testing.c: In function 'main':
+../Src/011i2c_master_rx_testing.c:101:49: warning: passing argument 2 of 'I2C_MasterSendData' makes pointer from integer without a cast [-Wint-conversion]
+  101 |                 I2C_MasterSendData(&I2C1Handle, one_byte_cmd, 1, SLAVE_ADDR);
+      |                                                 ^~~~~~~~~~~~
+      |                                                 |
+      |                                                 uint8_t {aka unsigned char}
+In file included from /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx.h:538,
+                 from ../Src/011i2c_master_rx_testing.c:8:
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:88:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+   88 | void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t Len, uint8_t SlaveAddr);
+      |                                                   ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:104:40: error: 'pI2C1Handle' undeclared (first use in this function); did you mean 'I2C1Handle'?
+  104 |                 I2C_MasterReceiveData(&pI2C1Handle, &ReadByte, 1, SLAVE_ADDR);
+      |                                        ^~~~~~~~~~~
+      |                                        I2C1Handle
+../Src/011i2c_master_rx_testing.c:104:40: note: each undeclared identifier is reported only once for each function it appears in
+../Src/011i2c_master_rx_testing.c:104:53: warning: passing argument 2 of 'I2C_MasterReceiveData' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  104 |                 I2C_MasterReceiveData(&pI2C1Handle, &ReadByte, 1, SLAVE_ADDR);
+      |                                                     ^~~~~~~~~
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile char *'
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:107:49: warning: passing argument 2 of 'I2C_MasterSendData' makes pointer from integer without a cast [-Wint-conversion]
+  107 |                 I2C_MasterSendData(&I2C1Handle, all_byte_cmd, 1, SLAVE_ADDR);
+      |                                                 ^~~~~~~~~~~~
+      |                                                 |
+      |                                                 uint8_t {aka unsigned char}
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:88:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+   88 | void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t Len, uint8_t SlaveAddr);
+      |                                                   ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:110:53: warning: passing argument 2 of 'I2C_MasterReceiveData' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  110 |                 I2C_MasterReceiveData(&pI2C1Handle, &ReadByte, 4, SLAVE_ADDR);
+      |                                                     ^~~~~~~~~
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile char *'
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/011i2c_master_rx_testing.o] Error 1
+"make -j11 all" terminated with exit code 2. Build might be incomplete.
+16:31:34 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+../Src/011i2c_master_rx_testing.c: In function 'main':
+../Src/011i2c_master_rx_testing.c:101:49: warning: passing argument 2 of 'I2C_MasterSendData' makes pointer from integer without a cast [-Wint-conversion]
+  101 |                 I2C_MasterSendData(&I2C1Handle, one_byte_cmd, 1, SLAVE_ADDR);
+      |                                                 ^~~~~~~~~~~~
+      |                                                 |
+      |                                                 uint8_t {aka unsigned char}
+In file included from /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx.h:538,
+                 from ../Src/011i2c_master_rx_testing.c:8:
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:88:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+   88 | void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t Len, uint8_t SlaveAddr);
+      |                                                   ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:104:52: warning: passing argument 2 of 'I2C_MasterReceiveData' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  104 |                 I2C_MasterReceiveData(&I2C1Handle, &ReadByte, 1, SLAVE_ADDR);
+      |                                                    ^~~~~~~~~
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile char *'
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:107:49: warning: passing argument 2 of 'I2C_MasterSendData' makes pointer from integer without a cast [-Wint-conversion]
+  107 |                 I2C_MasterSendData(&I2C1Handle, all_byte_cmd, 1, SLAVE_ADDR);
+      |                                                 ^~~~~~~~~~~~
+      |                                                 |
+      |                                                 uint8_t {aka unsigned char}
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:88:60: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+   88 | void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t Len, uint8_t SlaveAddr);
+      |                                                   ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:110:52: warning: passing argument 2 of 'I2C_MasterReceiveData' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  110 |                 I2C_MasterReceiveData(&I2C1Handle, &ReadByte, 4, SLAVE_ADDR);
+      |                                                    ^~~~~~~~~
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile char *'
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3872	     36	   1580	   5488	   1570	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+16:34:14 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+../Src/011i2c_master_rx_testing.c: In function 'main':
+../Src/011i2c_master_rx_testing.c:104:52: warning: passing argument 2 of 'I2C_MasterReceiveData' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  104 |                 I2C_MasterReceiveData(&I2C1Handle, &ReadByte, 1, SLAVE_ADDR);
+      |                                                    ^~~~~~~~~
+In file included from /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx.h:538,
+                 from ../Src/011i2c_master_rx_testing.c:8:
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile char *'
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:110:52: warning: passing argument 2 of 'I2C_MasterReceiveData' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  110 |                 I2C_MasterReceiveData(&I2C1Handle, &ReadByte, 4, SLAVE_ADDR);
+      |                                                    ^~~~~~~~~
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile char *'
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3864	     40	   1584	   5488	   1570	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+16:39:58 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3864	     36	   1580	   5480	   1568	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+16:40:22 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3864	     36	   1580	   5480	   1568	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+16:54:28 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+../Src/011i2c_master_rx_testing.c: In function 'main':
+../Src/011i2c_master_rx_testing.c:104:52: warning: passing argument 2 of 'I2C_MasterReceiveData' from incompatible pointer type [-Wincompatible-pointer-types]
+  104 |                 I2C_MasterReceiveData(&I2C1Handle, &ReadByte, 1, SLAVE_ADDR);
+      |                                                    ^~~~~~~~~
+      |                                                    |
+      |                                                    uint8_t (*)[] {aka unsigned char (*)[]}
+In file included from /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx.h:538,
+                 from ../Src/011i2c_master_rx_testing.c:8:
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[]' {aka 'unsigned char (*)[]'}
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c:110:52: warning: passing argument 2 of 'I2C_MasterReceiveData' from incompatible pointer type [-Wincompatible-pointer-types]
+  110 |                 I2C_MasterReceiveData(&I2C1Handle, &ReadByte, 4, SLAVE_ADDR);
+      |                                                    ^~~~~~~~~
+      |                                                    |
+      |                                                    uint8_t (*)[] {aka unsigned char (*)[]}
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[]' {aka 'unsigned char (*)[]'}
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c: At top level:
+../Src/011i2c_master_rx_testing.c:24:9: warning: array 'ReadByte' assumed to have one element
+   24 | uint8_t ReadByte[];
+      |         ^~~~~~~~
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3864	     36	   1580	   5480	   1568	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+16:56:42 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+../Src/011i2c_master_rx_testing.c: In function 'main':
+../Src/011i2c_master_rx_testing.c:104:52: warning: passing argument 2 of 'I2C_MasterReceiveData' from incompatible pointer type [-Wincompatible-pointer-types]
+  104 |                 I2C_MasterReceiveData(&I2C1Handle, &ReadByte, 1, SLAVE_ADDR);
+      |                                                    ^~~~~~~~~
+      |                                                    |
+      |                                                    uint8_t (*)[] {aka unsigned char (*)[]}
+In file included from /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx.h:538,
+                 from ../Src/011i2c_master_rx_testing.c:8:
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[]' {aka 'unsigned char (*)[]'}
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c: At top level:
+../Src/011i2c_master_rx_testing.c:24:9: warning: array 'ReadByte' assumed to have one element
+   24 | uint8_t ReadByte[];
+      |         ^~~~~~~~
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3836	     36	   1580	   5452	   154c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+17:00:15 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+../Src/011i2c_master_rx_testing.c: In function 'main':
+../Src/011i2c_master_rx_testing.c:111:52: warning: passing argument 2 of 'I2C_MasterReceiveData' from incompatible pointer type [-Wincompatible-pointer-types]
+  111 |                 I2C_MasterReceiveData(&I2C1Handle, &ReadByte, length, SLAVE_ADDR);
+      |                                                    ^~~~~~~~~
+      |                                                    |
+      |                                                    uint8_t (*)[] {aka unsigned char (*)[]}
+In file included from /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx.h:538,
+                 from ../Src/011i2c_master_rx_testing.c:8:
+/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc/stm32f407xx_i2c_driver.h:89:63: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[]' {aka 'unsigned char (*)[]'}
+   89 | void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr);
+      |                                                      ~~~~~~~~~^~~~~~~~~
+../Src/011i2c_master_rx_testing.c: At top level:
+../Src/011i2c_master_rx_testing.c:24:9: warning: array 'ReadByte' assumed to have one element
+   24 | uint8_t ReadByte[];
+      |         ^~~~~~~~
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3868	     36	   1580	   5484	   156c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+17:00:38 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+../Src/011i2c_master_rx_testing.c:24:9: warning: array 'ReadByte' assumed to have one element
+   24 | uint8_t ReadByte[];
+      |         ^~~~~~~~
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3868	     36	   1580	   5484	   156c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+17:00:54 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3868	     36	   1612	   5516	   158c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+17:01:37 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3868	     36	   1612	   5516	   158c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+17:04:52 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../Src/011i2c_master_rx_testing.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/011i2c_master_rx_testing.d" -MT"Src/011i2c_master_rx_testing.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/011i2c_master_rx_testing.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3868	     36	   1612	   5516	   158c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+17:09:13 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/src/stm32f407xx_i2c_driver.d" -MT"drivers/src/stm32f407xx_i2c_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_i2c_driver.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3868	     36	   1612	   5516	   158c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+17:11:33 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3868	     36	   1612	   5516	   158c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+17:18:20 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-gcc "../drivers/src/stm32f407xx_i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/src/stm32f407xx_i2c_driver.d" -MT"drivers/src/stm32f407xx_i2c_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32f407xx_i2c_driver.o"
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/stm32f4xx_drivers/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+   3868	     36	   1612	   5516	   158c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f4xx_drivers.list
+ 
+17:18:24 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j11 all 
+arm-none-eabi-size  stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3868	     36	   1612	   5516	   158c	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 

@@ -12,6 +12,6 @@
 ../drivers/src/stm32f407xx_i2c_driver.c:293:9:I2C_GetFlagStatus	16	static
 ../drivers/src/stm32f407xx_i2c_driver.c:317:6:I2C_MasterSendData	24	static
 ../drivers/src/stm32f407xx_i2c_driver.c:382:6:I2C_MasterReceiveData	32	static
-../drivers/src/stm32f407xx_i2c_driver.c:490:6:I2C_IRQInterruptConfig	16	static
-../drivers/src/stm32f407xx_i2c_driver.c:545:6:I2C_IRQPriorityConfig	24	static
-../drivers/src/stm32f407xx_i2c_driver.c:571:6:I2C_PeripheralControl	16	static
+../drivers/src/stm32f407xx_i2c_driver.c:488:6:I2C_IRQInterruptConfig	16	static
+../drivers/src/stm32f407xx_i2c_driver.c:543:6:I2C_IRQPriorityConfig	24	static
+../drivers/src/stm32f407xx_i2c_driver.c:569:6:I2C_PeripheralControl	16	static
