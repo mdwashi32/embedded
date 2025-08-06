@@ -3,6 +3,11 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="I2C_CloseSend"/>
+		<item value="stopc"/>
+		<item value="I2CHandleRXNEInterrupt"/>
+		<item value="ClearADDRFlag"/>
+		<item value="I2C_ClearADDRFlag"/>
 		<item value="if(pI2CHandle-&gt;StartRepeated"/>
 		<item value="RCC_GetPCLK1"/>
 		<item value="RCC_GetPCLK"/>
@@ -13,11 +18,6 @@
 		<item value="SPI"/>
 		<item value="ReadByte"/>
 		<item value="SSOE"/>
-		<item value="IRQHan"/>
-		<item value="IRQ"/>
-		<item value="SPI4"/>
-		<item value="ackbyte"/>
-		<item value="commandcode"/>
 	</list>
 	<list key="replacehistory">
 		<item value="RCC_GetPCLK1"/>
