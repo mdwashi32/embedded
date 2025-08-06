@@ -395,7 +395,7 @@ typedef struct
 #define I2C3_REG_RESET()	do { (RCC->APB1RSTR |= (1 << 23)); (RCC->AHB1RSTR &= ~(1 << 23)); }while(0)
 
 /*
- * IRQ
+ * IRQ Numbers
  */
 #define IRQ_NO_EXTI0		6
 #define IRQ_NO_EXTI1		7
@@ -409,6 +409,17 @@ typedef struct
 #define IRQ_NO_SPI2			43
 #define IRQ_NO_SPI3			51
 #define IRQ_NO_SPI4			84
+
+#define IRQ_NO_I2C1_EV		31
+#define IRQ_NO_I2C1_ER		32
+#define IRQ_NO_I2C2_EV		33
+#define IRQ_NO_I2C2_ER		34
+#define IRQ_NO_I2C3_EV		72
+#define IRQ_NO_I2C3_ER		73
+
+/*
+ * IRQ Priority Levels
+ */
 
 #define NVIC_IRQ_PRIO0     0
 #define NVIC_IRQ_PRIO1     1

@@ -3,6 +3,7 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="if(pI2CHandle-&gt;StartRepeated"/>
 		<item value="RCC_GetPCLK1"/>
 		<item value="RCC_GetPCLK"/>
 		<item value="ADDR"/>
@@ -17,7 +18,6 @@
 		<item value="SPI4"/>
 		<item value="ackbyte"/>
 		<item value="commandcode"/>
-		<item value="dummy_byte"/>
 	</list>
 	<list key="replacehistory">
 		<item value="RCC_GetPCLK1"/>

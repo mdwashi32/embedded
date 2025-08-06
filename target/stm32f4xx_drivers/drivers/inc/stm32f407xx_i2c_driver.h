@@ -25,8 +25,16 @@ typedef struct
  */
 typedef struct
 {
-	I2C_RegDef_t *pI2Cx;
-	I2C_Config_t I2C_Config;
+	I2C_RegDef_t 	*pI2Cx;			// peripheral base address
+	I2C_Config_t 	I2C_Config;		// Peripheral configuration struct
+	uint8_t			*pTxBuffer;		// Store Transfer budder address
+	uint8_t			*pRxBuffer;		// Store Receiver buffer address
+	uint32_t		TxLen;			// Store Transfer buffer Length
+	uint32_t		RxLen;			// Store Receiver buffer Length
+	uint8_t			TxRxState;		// Store communication state
+	uint8_t			DevAddr;		// Store slave/device address
+	uint32_t		RxSize;			// Store Rx Size
+	uint8_t			StartRepeated;	// Store repeated start value
 }I2C_Handle_t;
 
 /*
@@ -67,7 +75,28 @@ typedef struct
 #define I2C_NO_SR		0
 #define I2C_SR			1
 
+/*
+ * I2C application states
+ */
+#define I2C_READY		0
+#define I2C_BUSY_IN_RX	1
+#define I2C_BUSY_IN_TX	2
+/*
+ * I2C application event macros
+ */
 
+#define I2C_EV_TX_CMPLT		0
+#define I2C_EV_RX_CMPLT		1
+#define I2C_EV_STOP			2
+
+/*
+ * I2C Application Error States
+ */
+#define I2C_ERROR_BERR  	3
+#define I2C_ERROR_ARLO  	4
+#define I2C_ERROR_AF    	5
+#define I2C_ERROR_OVR   	6
+#define I2C_ERROR_TIMEOUT 	7
 
 /******************************************************************************
  * 						APIs supported by this driver
@@ -91,12 +120,20 @@ void I2C_DeInit(I2C_RegDef_t *pI2Cx);
 void I2C_MasterSendData(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t Len, uint8_t SlaveAddr, uint8_t StartRepeated);
 void I2C_MasterReceiveData(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr, uint8_t StartRepeated);
 
+uint8_t I2C_MasterSendDataIT(I2C_Handle_t *pI2CHandle, uint8_t *pTxBuffer, uint32_t Len, uint8_t SlaveAddr, uint8_t StartRepeated);
+uint8_t I2C_MasterReceiveDataIT(I2C_Handle_t *pI2CHandle, uint8_t *pRxBuffer, uint8_t Len, uint8_t SlaveAddr, uint8_t StartRepeated);
+
+void I2C_CloseReceiveData(I2C_Handle_t *pI2CHandle);
+;
+
 /*
  * IRQ Configuration and ISR Handling
  */
 
 void I2C_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi);
 void I2C_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority);
+void I2C_EV_IRQHandling(I2C_Handle_t *pI2CHandle);
+void I2C_ERR_IRQHandling(I2C_Handle_t *pI2CHandle);
 
 /*
  * Other Peripheral Control APIs
