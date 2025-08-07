@@ -1,0 +1,48 @@
+/*
+ * stm32f407xx_usart_driver.c
+ *
+ *  Created on: Aug 6, 2025
+ *      Author: mauricewashington
+ */
+
+#include "stm32f407xx_usart_driver.h"
+
+/*
+ * Peripheral Clock Setup
+ */
+void USART_PeriClockControl(USART_RegDef_t *pUSARTx, uint8_t EnorDi)
+{
+
+}
+
+/*
+ * Other Peripheral Control APIs
+ */
+void USART_PeripheralControl(USART_RegDef_t *pUSARTx, uint8_t EnOrDi)
+{
+
+}
+
+uint8_t USART_GetFlagStatus(USART_RegDef_t *pUSARTx, uint32_t FlagName)
+{
+
+}
+
+void USART_ClearFlag(USART_RegDef_t *pUSARTx, uint16_t FlagName)
+{
+
+}
+
+/*
+ * IRQ Configuration and ISR Handling
+ */
+
+void USART_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi)
+{
+
+}
+
+void USART_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority)
+{
+
+}

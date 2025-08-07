@@ -1,0 +1,13 @@
+../drivers/src/stm32f407xx_usart_driver.c:26:6:USART_SetBaudRate	5
+../drivers/src/stm32f407xx_usart_driver.c:92:6:USART_Init	9
+../drivers/src/stm32f407xx_usart_driver.c:188:6:USART_DeInit	7
+../drivers/src/stm32f407xx_usart_driver.c:221:6:USART_PeriClockControl	12
+../drivers/src/stm32f407xx_usart_driver.c:286:6:USART_SendData	6
+../drivers/src/stm32f407xx_usart_driver.c:348:6:USART_ReceiveData	6
+../drivers/src/stm32f407xx_usart_driver.c:425:9:USART_SendDataIT	2
+../drivers/src/stm32f407xx_usart_driver.c:463:9:USART_ReceiveDataIT	2
+../drivers/src/stm32f407xx_usart_driver.c:486:6:USART_PeripheralControl	2
+../drivers/src/stm32f407xx_usart_driver.c:498:9:USART_GetFlagStatus	2
+../drivers/src/stm32f407xx_usart_driver.c:507:6:USART_ClearFlag	1
+../drivers/src/stm32f407xx_usart_driver.c:516:6:USART_IRQInterruptConfig	12
+../drivers/src/stm32f407xx_usart_driver.c:556:6:USART_IRQPriorityConfig	1

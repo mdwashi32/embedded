@@ -27,7 +27,7 @@ typedef struct
 {
 	I2C_RegDef_t 	*pI2Cx;			// peripheral base address
 	I2C_Config_t 	I2C_Config;		// Peripheral configuration struct
-	uint8_t			*pTxBuffer;		// Store Transfer budder address
+	uint8_t			*pTxBuffer;		// Store Transfer buffer address
 	uint8_t			*pRxBuffer;		// Store Receiver buffer address
 	uint32_t		TxLen;			// Store Transfer buffer Length
 	uint32_t		RxLen;			// Store Receiver buffer Length
