@@ -240,7 +240,7 @@ void USART_PeriClockControl(USART_RegDef_t *pUSARTx, uint8_t EnorDi)
 		}
 		else if(pUSARTx == UART5)
 		{
-			UART4_PCLK_EN();
+			UART5_PCLK_EN();
 		}
 	}
 
@@ -506,7 +506,7 @@ uint8_t USART_GetFlagStatus(USART_RegDef_t *pUSARTx, uint32_t FlagName)
 
 void USART_ClearFlag(USART_RegDef_t *pUSARTx, uint16_t FlagName)
 {
-	pUSARTx->SR &= ~(1 << FlagName); // PLACEHOLDAER
+	pUSARTx->SR &= ~(FlagName); // PLACEHOLDAER
 }
 
 /*

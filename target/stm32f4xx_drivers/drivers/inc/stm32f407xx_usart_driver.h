@@ -53,7 +53,7 @@ typedef struct
  *Possible options for USART_Baud
  */
 #define USART_STD_BAUD_1200					1200
-#define USART_STD_BAUD_2400					400
+#define USART_STD_BAUD_2400					2400
 #define USART_STD_BAUD_9600					9600
 #define USART_STD_BAUD_19200 				19200
 #define USART_STD_BAUD_38400 				38400
@@ -63,7 +63,7 @@ typedef struct
 #define USART_STD_BAUD_460800 				460800
 #define USART_STD_BAUD_921600 				921600
 #define USART_STD_BAUD_2M 					2000000
-#define SUART_STD_BAUD_3M 					3000000
+#define USART_STD_BAUD_3M 					3000000
 
 
 /*
@@ -102,16 +102,16 @@ typedef struct
 /*
  * USART Status (Register) Flag Macros
  */
-#define USART_FLAG_PE		0
-#define USART_FLAG_FE		1
-#define USART_FLAG_NF		2
-#define USART_FLAG_ORE		3
-#define USART_FLAG_IDLE		4
-#define USART_FLAG_RXNE		5
-#define USART_FLAG_TC		6
-#define USART_FLAG_TXE		7
-#define USART_FLAG_LBD		8
-#define USART_FLAG_CTS		9
+#define USART_FLAG_PE		(1 << 0)
+#define USART_FLAG_FE		(1 << 1)
+#define USART_FLAG_NF		(1 << 2)
+#define USART_FLAG_ORE		(1 << 3)
+#define USART_FLAG_IDLE		(1 << 4)
+#define USART_FLAG_RXNE		(1 << 5)
+#define USART_FLAG_TC		(1 << 6)
+#define USART_FLAG_TXE		(1 << 7)
+#define USART_FLAG_LBD		(1 << 8)
+#define USART_FLAG_CTS		(1 << 9)
 
 /*
  * USART application states

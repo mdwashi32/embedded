@@ -3,6 +3,14 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="USART_Sen"/>
+		<item value="PCLK"/>
+		<item value="clearADDR"/>
+		<item value="peripheralcontrol"/>
+		<item value="peripheralcont"/>
+		<item value="I2C"/>
+		<item value="SPI"/>
+		<item value="SLAVE_ADDR"/>
 		<item value="I2C_CloseSend"/>
 		<item value="stopc"/>
 		<item value="I2CHandleRXNEInterrupt"/>
@@ -10,16 +18,9 @@
 		<item value="I2C_ClearADDRFlag"/>
 		<item value="if(pI2CHandle-&gt;StartRepeated"/>
 		<item value="RCC_GetPCLK1"/>
-		<item value="RCC_GetPCLK"/>
-		<item value="ADDR"/>
-		<item value="PeripheralControl"/>
-		<item value="Peripheral"/>
-		<item value="peripheral"/>
-		<item value="SPI"/>
-		<item value="ReadByte"/>
-		<item value="SSOE"/>
 	</list>
 	<list key="replacehistory">
+		<item value="USART"/>
 		<item value="RCC_GetPCLK1"/>
 		<item value="I2C"/>
 		<item value="ack_byte"/>
@@ -34,7 +35,6 @@
 		<item value="SPI2_PCLK"/>
 		<item value="SPI1_PCLK"/>
 		<item value="pSPIx == SPI"/>
-		<item value="PCLK"/>
 	</list>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item key="selection" value=""/>

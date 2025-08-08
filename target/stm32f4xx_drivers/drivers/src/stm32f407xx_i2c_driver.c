@@ -7,9 +7,6 @@
 
 #include "stm32f407xx_i2c_driver.h"
 
-uint16_t AHB1_PreScaler[8] = {2,4,8,16,64,128,256,512};
-uint16_t APB1_PreScaler[8] = {2,4,8,16};
-
 static void I2C_GenerateStartCondition(I2C_RegDef_t *pI2Cx);
 static void I2C_Write_ExecuteAddressPhase(I2C_RegDef_t *pI2Cx, uint8_t SlaveAddr);
 static void I2C_Read_ExecuteAddressPhase(I2C_RegDef_t *pI2Cx, uint8_t SlaveAddr);

@@ -369,7 +369,7 @@ typedef struct
  * Clock Disable Macro for SYSCFG Peripheral
  */
 
-#define SYSCFG_PCLK_DI() 	RCC->APB2ENR &= ~(1 << 14))
+#define SYSCFG_PCLK_DI() 	(RCC->APB2ENR &= ~(1 << 14))
 
 /*
  * Macros to reset GPIOx peripherals
@@ -406,7 +406,7 @@ typedef struct
 #define SPI3_REG_RESET()	do { (RCC->APB1RSTR |= (1 << 15)); (RCC->APB1RSTR &= ~(1 << 15)); }while(0)
 
 #define SPI1_REG_RESET()	do { (RCC->APB2RSTR |= (1 << 12)); (RCC->APB2RSTR &= ~(1 << 12)); }while(0)
-#define	SPI4_REG_RESET()	do { (RCC->APB2RSTR |= (1 << 13)); (RCC->APB2RSTR &= ~(1 << 12)); }while(0)
+#define	SPI4_REG_RESET()	do { (RCC->APB2RSTR |= (1 << 13)); (RCC->APB2RSTR &= ~(1 << 13)); }while(0)
 
 /*
  *  Macros to reset I2Cx peripherals
