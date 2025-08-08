@@ -11,3 +11,4 @@
 ../drivers/src/stm32f407xx_usart_driver.c:507:6:USART_ClearFlag	16	static
 ../drivers/src/stm32f407xx_usart_driver.c:516:6:USART_IRQInterruptConfig	16	static
 ../drivers/src/stm32f407xx_usart_driver.c:556:6:USART_IRQPriorityConfig	24	static
+../drivers/src/stm32f407xx_usart_driver.c:581:6:USART_IRQHandling	40	static

@@ -8,7 +8,7 @@
 #include <string.h>
 #include "stm32f407xx.h"
 
-char msg[1024] = "UART Tx Testing!";
+char msg[1024] = "UART Tx Testing!\n";
 
 USART_Handle_t usart3_handle;
 
@@ -66,7 +66,7 @@ void GPIO_ButtonInit(void)
 
 //static void usart3_blast_test(void)
 //{
-//    // 1) Enable clocks you already have macros for
+//    // 1) Enable clocks
 //    GPIOB_PCLK_EN();
 //    USART3_PCLK_EN();
 //
@@ -77,11 +77,11 @@ void GPIO_ButtonInit(void)
 //    GPIOB->MODER &= ~((3U << (10*2)) | (3U << (11*2)));   // clear
 //    GPIOB->MODER |=  ((2U << (10*2)) | (2U << (11*2)));   // 10b = AF
 //
-//    // Optional: set speed to fast/high for cleaner edges
+//    // set speed to fast/high for cleaner edges
 //    GPIOB->OSPEEDR &= ~((3U << (10*2)) | (3U << (11*2)));
 //    GPIOB->OSPEEDR |=  ((2U << (10*2)) | (2U << (11*2))); // 10b = Fast
 //
-//    // Optional: no pull-ups/downs on TX; RX can have PU if floating
+//    // no pull-ups/downs on TX; RX can have PU if floating
 //    GPIOB->PUPDR &= ~((3U << (10*2)) | (3U << (11*2)));
 //
 //    // 4) Select AF7 (USART3) for PB10/PB11 in AFRH

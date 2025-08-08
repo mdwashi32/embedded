@@ -594,8 +594,10 @@ typedef struct
 
 #define USART_CR2_STOP		12
 
+#define USART_CR3_EIE		0
 #define USART_CR3_RTSE		8
 #define USART_CR3_CTSE		9
+#define USART_CR3_CTSIE		10
 
 #include "stm32f407xx_gpio_driver.h"
 #include "stm32f407xx_spi_driver.h"

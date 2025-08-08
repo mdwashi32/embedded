@@ -120,6 +120,20 @@ typedef struct
 #define USART_BUSY_IN_RX	1
 #define USART_BUSY_IN_TX	2
 
+/*
+ * I2C application event macros
+ */
+
+#define USART_EV_TX_CMPLT		0
+#define USART_EV_RX_CMPLT		1
+#define USART_EV_CTS			2
+#define USART_EV_IDLE			3
+#define USART_EV_ORE			4
+
+#define USART_ERREVENT_FE		5
+#define USART_ERREVENT_NF		6
+#define USART_ERREVENT_ORE		7
+
 /******************************************************************************
  * 						APIs supported by this driver
  * 		For more information about the APIs, check the function definitions

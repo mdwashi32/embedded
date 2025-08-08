@@ -1,0 +1,131 @@
+/*
+ * 015uart_tx.c
+ *
+ *  Created on: Aug 7, 2025
+ *      Author: mauricewashington
+ */
+
+#include <string.h>
+#include "stm32f407xx.h"
+
+char msg[1024] = "UART Tx Testing!";
+
+USART_Handle_t usart3_handle;
+
+void delay(void)
+{
+	for(uint32_t i = 0; i < 500000/2; i++);
+}
+
+
+void USART3_Init(void)
+{
+	usart3_handle.pUSARTx = USART3;
+	usart3_handle.USART_Config.USART_Baud = USART_STD_BAUD_115200;
+	usart3_handle.USART_Config.USART_HWFlowControl = USART_HW_FLOW_CTRL_NONE;
+	usart3_handle.USART_Config.USART_Mode = USART_MODE_ONLY_TX;
+	usart3_handle.USART_Config.USART_NoOfStopBits = USART_STOPBITS_1;
+	usart3_handle.USART_Config.USART_WordLength = USART_WORDLEN_8BITS;
+	usart3_handle.USART_Config.USART_ParityControl = USART_PARITY_DISABLE;
+	USART_Init(&usart3_handle);
+}
+
+void USART3_GPIO_Init(void)
+{
+	GPIO_Handle_t usart_gpios;
+	usart_gpios.pGPIOx = GPIOB;
+	usart_gpios.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_ALTFN;
+	usart_gpios.GPIO_PinConfig.GPIO_PinOPType = GPIO_OP_TYPE_PP;
+	usart_gpios.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_PIN_PU;
+	usart_gpios.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
+	usart_gpios.GPIO_PinConfig.GPIO_PinAltFunMode = 7; //USART
+
+	// usart1 TX
+	usart_gpios.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_10;
+	GPIO_Init(&usart_gpios);
+
+	// usart1 RX
+	usart_gpios.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_11;
+	GPIO_Init(&usart_gpios);
+
+}
+
+void GPIO_ButtonInit(void)
+{
+	GPIO_Handle_t GpioBtn;
+	//button
+	GpioBtn.pGPIOx = GPIOA;
+	GpioBtn.GPIO_PinConfig.GPIO_PinNumber = GPIO_PIN_NO_0;
+	GpioBtn.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_IN;
+	GpioBtn.GPIO_PinConfig.GPIO_PinSpeed = GPIO_SPEED_FAST;
+	GpioBtn.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_NO_PUPD;
+
+	GPIO_Init(&GpioBtn);
+
+}
+
+//static void usart3_blast_test(void)
+//{
+//    // 1) Enable clocks you already have macros for
+//    GPIOB_PCLK_EN();
+//    USART3_PCLK_EN();
+//
+//    // 2) Make sure USART3 is not held in reset
+//    RCC->APB1RSTR &= ~(1 << 18);   // clear USART3 reset
+//
+//    // 3) Put PB10 (TX) and PB11 (RX) into AF mode
+//    GPIOB->MODER &= ~((3U << (10*2)) | (3U << (11*2)));   // clear
+//    GPIOB->MODER |=  ((2U << (10*2)) | (2U << (11*2)));   // 10b = AF
+//
+//    // Optional: set speed to fast/high for cleaner edges
+//    GPIOB->OSPEEDR &= ~((3U << (10*2)) | (3U << (11*2)));
+//    GPIOB->OSPEEDR |=  ((2U << (10*2)) | (2U << (11*2))); // 10b = Fast
+//
+//    // Optional: no pull-ups/downs on TX; RX can have PU if floating
+//    GPIOB->PUPDR &= ~((3U << (10*2)) | (3U << (11*2)));
+//
+//    // 4) Select AF7 (USART3) for PB10/PB11 in AFRH
+//    GPIOB->AFR[1] &= ~((0xFU << 8) | (0xFU << 12));  // clear PB10[11:8], PB11[15:12]
+//    GPIOB->AFR[1] |=  ((7U   << 8) | (7U   << 12));  // AF7 for both
+//
+//    // 5) Baud = 115200 assuming PCLK1 = 16 MHz (HSI, no PLL). BRR = 0x8B.
+//    //    If your PCLK1 is 42 MHz (PLL), use BRR ≈ 0x16C.
+//    USART3->BRR = 0x8B;
+//
+//    // 6) Enable UE and TE (transmitter)
+//    USART3->CR1 = (1U << USART_CR1_UE) | (1U << USART_CR1_TE);
+//
+//    // 7) Fire bytes forever
+//    for (;;) {
+//        while (!(USART3->SR & (1U << 7))) { /* wait TXE */ }
+//        *(volatile uint8_t *)&USART3->DR = 'U';
+//    }
+//}
+
+int main(void)
+{
+	//	usart3_blast_test();
+
+	GPIO_ButtonInit();
+
+	USART3_GPIO_Init();
+
+	USART3_Init();
+
+	USART_PeripheralControl(USART3, ENABLE);
+
+	while(1)
+	{
+		while(! GPIO_ReadFromInputPin(GPIOA,GPIO_PIN_NO_0) ); // wait for button press
+
+		delay(); // avoid button debounce ~200ms delay
+
+		USART_SendData(&usart3_handle, (uint8_t*)msg, strlen(msg));
+
+		delay();
+	}
+
+	return 0;
+
+
+}

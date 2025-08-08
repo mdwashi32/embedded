@@ -3,6 +3,11 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="Handling"/>
+		<item value="clearflag"/>
+		<item value="FLAG"/>
+		<item value="USART_GE"/>
+		<item value="usart2"/>
 		<item value="USART_Sen"/>
 		<item value="PCLK"/>
 		<item value="clearADDR"/>
@@ -13,13 +18,9 @@
 		<item value="SLAVE_ADDR"/>
 		<item value="I2C_CloseSend"/>
 		<item value="stopc"/>
-		<item value="I2CHandleRXNEInterrupt"/>
-		<item value="ClearADDRFlag"/>
-		<item value="I2C_ClearADDRFlag"/>
-		<item value="if(pI2CHandle-&gt;StartRepeated"/>
-		<item value="RCC_GetPCLK1"/>
 	</list>
 	<list key="replacehistory">
+		<item value="usart1"/>
 		<item value="USART"/>
 		<item value="RCC_GetPCLK1"/>
 		<item value="I2C"/>
@@ -34,7 +35,6 @@
 		<item value="SPI3_PCLK"/>
 		<item value="SPI2_PCLK"/>
 		<item value="SPI1_PCLK"/>
-		<item value="pSPIx == SPI"/>
 	</list>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item key="selection" value=""/>
