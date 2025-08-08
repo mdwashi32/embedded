@@ -813,7 +813,7 @@ void USART_IRQHandling(USART_Handle_t *pUSARTHandle)
 	// check the state of IDLEIE bit in CR1
 	temp2 = pUSARTHandle->pUSARTx->CR3 & ( 1 << USART_CR3_CTSE);
 
-	uint32_t dummyRead = 0;
+	uint8_t dummyRead = 0;
 
 	if(temp1 && temp2)
 	{

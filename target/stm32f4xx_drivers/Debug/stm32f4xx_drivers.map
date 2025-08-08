@@ -618,7 +618,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xbe ./drivers/src/stm32f407xx_usart_driver.o
  .debug_macro   0x00000000       0xd0 ./drivers/src/stm32f407xx_usart_driver.o
  .debug_macro   0x00000000      0x131 ./drivers/src/stm32f407xx_usart_driver.o
- .debug_line    0x00000000      0xbda ./drivers/src/stm32f407xx_usart_driver.o
+ .debug_line    0x00000000      0xbc8 ./drivers/src/stm32f407xx_usart_driver.o
  .debug_str     0x00000000     0x7506 ./drivers/src/stm32f407xx_usart_driver.o
  .comment       0x00000000       0x44 ./drivers/src/stm32f407xx_usart_driver.o
  .debug_frame   0x00000000      0x230 ./drivers/src/stm32f407xx_usart_driver.o
