@@ -33,7 +33,7 @@
 		<item key="DetailsSashWeight" value="200"/>
 	</section>
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.UpdateWizard.WizardSettings">
-		<item key="DIALOG_X_ORIGIN" value="843"/>
+		<item key="DIALOG_X_ORIGIN" value="728"/>
 		<item key="DIALOG_Y_ORIGIN" value="376"/>
 		<item key="DIALOG_WIDTH" value="875"/>
 		<item key="DIALOG_HEIGHT" value="517"/>

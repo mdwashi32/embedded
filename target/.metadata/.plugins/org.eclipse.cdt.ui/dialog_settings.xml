@@ -21,8 +21,8 @@
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 	<section name="NewHeaderFileCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="-1285"/>
-		<item key="DIALOG_Y_ORIGIN" value="385"/>
+		<item key="DIALOG_X_ORIGIN" value="197"/>
+		<item key="DIALOG_Y_ORIGIN" value="198"/>
 		<item key="DIALOG_WIDTH" value="586"/>
 		<item key="DIALOG_HEIGHT" value="420"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
@@ -37,5 +37,12 @@
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
 		<item key="size.width" value="341"/>
 		<item key="size.height" value="180"/>
+	</section>
+	<section name="NewSourceFolderCreationWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="508"/>
+		<item key="DIALOG_Y_ORIGIN" value="189"/>
+		<item key="DIALOG_WIDTH" value="586"/>
+		<item key="DIALOG_HEIGHT" value="420"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>

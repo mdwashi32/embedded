@@ -20,7 +20,7 @@
  *
  * @return            -
  *
- * @Note              -  Resolve all the TODOs
+ * @Note              -  none
 
  */
 void USART_SetBaudRate(USART_RegDef_t *pUSARTx, uint32_t BaudRate)

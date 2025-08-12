@@ -3,6 +3,7 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="dumm"/>
 		<item value="Handling"/>
 		<item value="clearflag"/>
 		<item value="FLAG"/>
@@ -17,7 +18,6 @@
 		<item value="SPI"/>
 		<item value="SLAVE_ADDR"/>
 		<item value="I2C_CloseSend"/>
-		<item value="stopc"/>
 	</list>
 	<list key="replacehistory">
 		<item value="usart1"/>
