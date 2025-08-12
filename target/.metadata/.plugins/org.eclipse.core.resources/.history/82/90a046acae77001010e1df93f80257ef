@@ -141,8 +141,6 @@ int main(void)
 
 void SysTick_Handler(void)
 {
-	RTC_Time_t current_time;
-	RTC_Date_t current_date;
 	ds1307_get_current_time(&current_time);
 	char *am_pm;
 	if(current_time.time_format != TIME_FORMAT_24HRS)

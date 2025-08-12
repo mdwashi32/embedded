@@ -183,9 +183,9 @@ static uint8_t binary_to_bcd(uint8_t value)
 
 	if( value >= 10)
 	{
-		m = value / 10; //grab tens place
-		n = value % 10; //grab ones place
-		bcd = (uint8_t) ((m << 4) | n); // shift tens place into bcd position and OR with lower 4 bits
+		m = value /10;
+		n = value % 10;
+		bcd = (uint8_t) ((m<< 4) | n);
 	}
 
 	return bcd;
@@ -196,9 +196,9 @@ static uint8_t bcd_to_binary(uint8_t bcd)
 	uint8_t m,n;
 	uint8_t binary;
 
-	m = (uint8_t)((bcd >> 4) * 10); // upper 4 bits shifted back to 0th bit, multiply by 10 to get into decimal based tens place
-	n = bcd & (uint8_t)0x0F; // masking upper 4 bits to grab only lower bits
-	binary = (uint8_t) (m + n); // add together to get normal decimal (binary)
+	m = (uint8_t)((bcd >> 4) * 10);
+	n = bcd & (uint8_t)0x0F;
+	binary = (uint8_t) (m + n);
 
 	return binary;
 }
