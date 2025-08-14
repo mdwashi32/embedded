@@ -17,6 +17,7 @@ Project that uses the DS1307 RTC to display time and date on a character LCD usi
 ![Demo GIF](./target/images/rtc.gif)
 
 **Wiring**
+
 ![Wiring](./target/images/rtc.jpeg)
 
 📁 [View Source Code](https://github.com/mdwashi32/embedded/blob/main/target/stm32f4xx_drivers/Src/017rtc_lcd.c)
