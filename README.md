@@ -4,6 +4,22 @@ This repository contains code I developed while practicing embedded programming 
 
 The examples include low-level peripheral programming for STM32 microcontrollers, covering GPIO, SPI, I2C, UART, and more using register-level access in C.
 
+## 🧪 Projects
+
+Various embedded systems projects built using STM32 and possibly other microcontrollers. More projects will be added over time.
+
+### 🔷 STM32 Real-Time Clock with LCD Display
+
+Project that uses the DS1307 RTC to display time and date on a character LCD using I2C and GPIO drivers.
+
+**Demo**
+![Demo GIF](./target/images/rtc.gif)
+
+**Wiring**
+![Wiring](./target/images/rtc.jpeg)
+
+📁 [View Source Code](https://github.com/mdwashi32/embedded/blob/main/target/stm32f4xx_drivers/Src/017rtc_lcd.c)
+
 ## Acknowledgments
 
 Some of the source files are based on coursework from the following Udemy courses:
