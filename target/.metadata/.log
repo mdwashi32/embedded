@@ -11382,3 +11382,379 @@ org.eclipse.core.runtime.CoreException: attempt to set description for a project
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 !SUBENTRY 1 org.eclipse.cdt.core 4 -1 2025-08-12 12:01:52.127
 !MESSAGE attempt to set description for a project which does not exist or not open
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-12 12:04:01.248
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 12:04:02.480
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 12:04:27.731
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-12 15:44:50.043
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 15:44:51.330
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-12 15:51:13.540
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 15:51:14.824
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 15:52:00.802
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-12 16:03:44.610
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 16:03:45.824
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 16:10:57.239
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-12 16:23:02.697
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-12 16:34:45.795
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 16:34:47.035
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-12 17:01:13.401
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 17:01:14.744
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-08-12 17:07:38.933
+!MESSAGE An internal error occurred during: "GDB process monitor job.".
+!STACK 0
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@32dfbf12[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@2db4bfff[Wrapped task = org.eclipse.cdt.dsf.gdb.service.GDBBackend$MonitorJob$1@3db760fd]] rejected from org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor@7075ff60[Shutting down, pool size = 1, active threads = 1, queued tasks = 9, completed tasks = 7711]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562)
+	at org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor.schedule(DefaultDsfExecutor.java:450)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.submit(ScheduledThreadPoolExecutor.java:715)
+	at org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor.submit(DefaultDsfExecutor.java:482)
+	at org.eclipse.cdt.dsf.gdb.service.GDBBackend$MonitorJob.run(GDBBackend.java:735)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-08-12 17:07:38.942
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@1646e10f): Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status children=[Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #2 = Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status children=[Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0 Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBBackend$3@53e6c824): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0' resulted in a rejected execution exception. Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.ShutdownSequence$ServiceShutdownStep$1@5ed03946): Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status children=[Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0 Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBBackend$3@53e6c824): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0' resulted in a rejected execution exception.]' resulted in a rejected execution exception.], step #2 Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.GdbLaunch$5@5ba5c5c0): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #2 = Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status children=[Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0 Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBBackend$3@53e6c824): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0' resulted in a rejected execution exception. Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.ShutdownSequence$ServiceShutdownStep$1@5ed03946): Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status children=[Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0 Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBBackend$3@53e6c824): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0' resulted in a rejected execution exception.]' resulted in a rejected execution exception.], step #2' resulted in a rejected execution exception.]' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 0 2025-08-12 17:07:38.942
+!MESSAGE Executor shut down while executing Sequence Sequence "", result for executing step #2 = Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status children=[Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0 Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBBackend$3@53e6c824): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0' resulted in a rejected execution exception. Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.ShutdownSequence$ServiceShutdownStep$1@5ed03946): Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status children=[Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0 Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBBackend$3@53e6c824): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0' resulted in a rejected execution exception.]' resulted in a rejected execution exception.], step #2
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10005 2025-08-12 17:07:38.942
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.GdbLaunch$5@5ba5c5c0): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #2 = Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status children=[Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0 Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBBackend$3@53e6c824): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0' resulted in a rejected execution exception. Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.launching.ShutdownSequence$ServiceShutdownStep$1@5ed03946): Status ERROR: org.eclipse.cdt.dsf code=10005 Composite status children=[Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0 Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.gdb.service.GDBBackend$3@53e6c824): Status ERROR: org.eclipse.cdt.dsf code=0 Executor shut down while executing Sequence Sequence "", result for executing step #0 = Status OK: unknown code=0 OK, step #0' resulted in a rejected execution exception.]' resulted in a rejected execution exception.], step #2' resulted in a rejected execution exception.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-12 17:07:42.049
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 17:07:43.271
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-12 17:16:49.827
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-12 17:44:17.363
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 17:44:18.603
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-12 17:51:13.179
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.debug.core 4 2 2025-08-12 17:54:37.850
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1211)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:962)
+	at org.eclipse.swt.widgets.Display.create(Display.java:946)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:800)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:791)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1545)
+	at com.st.stm32cube.ide.mcu.debug.launch.Activator$DebugEventListener.inDebugPerspective(Activator.java:152)
+	at com.st.stm32cube.ide.mcu.debug.launch.Activator$DebugEventListener.handleDebugEvents(Activator.java:85)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1287)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1321)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2025-08-12 17:54:37.853
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1211)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:962)
+	at org.eclipse.swt.widgets.Display.create(Display.java:946)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:800)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:791)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1545)
+	at com.st.stm32cube.ide.mcu.debug.launch.Activator$DebugEventListener.inDebugPerspective(Activator.java:152)
+	at com.st.stm32cube.ide.mcu.debug.launch.Activator$DebugEventListener.handleDebugEvents(Activator.java:85)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1287)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1321)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2025-08-12 17:54:38.039
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1211)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:962)
+	at org.eclipse.swt.widgets.Display.create(Display.java:946)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:800)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:791)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1545)
+	at com.st.stm32cube.ide.mcu.debug.launch.Activator$DebugEventListener.inDebugPerspective(Activator.java:152)
+	at com.st.stm32cube.ide.mcu.debug.launch.Activator$DebugEventListener.handleDebugEvents(Activator.java:85)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1287)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1321)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2025-08-12 17:54:38.040
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4922)
+	at org.eclipse.swt.SWT.error(SWT.java:4837)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1211)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:962)
+	at org.eclipse.swt.widgets.Display.create(Display.java:946)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:800)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:791)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1545)
+	at com.st.stm32cube.ide.mcu.debug.launch.Activator$DebugEventListener.inDebugPerspective(Activator.java:152)
+	at com.st.stm32cube.ide.mcu.debug.launch.Activator$DebugEventListener.handleDebugEvents(Activator.java:85)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1287)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1321)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-08-12 17:54:38.169
+!MESSAGE An internal error occurred during: "Execute Debug Command".
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: The application has not been initialized.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:119)
+	at org.eclipse.core.internal.runtime.InternalPlatform.assertInitialized(InternalPlatform.java:185)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getAdapterManager(InternalPlatform.java:206)
+	at org.eclipse.core.runtime.Platform.getAdapterManager(Platform.java:661)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getAdapter(GdbLaunch.java:454)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.disconnect(GdbLaunch.java:338)
+	at org.eclipse.debug.internal.core.commands.DisconnectCommand.execute(DisconnectCommand.java:35)
+	at org.eclipse.debug.internal.core.commands.ForEachCommand.doExecute(ForEachCommand.java:36)
+	at org.eclipse.debug.core.commands.AbstractDebugCommand$1.run(AbstractDebugCommand.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2025-08-12 17:54:38.498
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob RUNNING
+	 at java.base/java.lang.Object.wait0(Native Method)
+	 at java.base/java.lang.Object.wait(Object.java:366)
+	 at java.base/java.lang.Object.wait(Object.java:339)
+	 at org.eclipse.ui.console.IOConsoleInputStream.waitForData(IOConsoleInputStream.java:140)
+	 at org.eclipse.ui.console.IOConsoleInputStream.read(IOConsoleInputStream.java:91)
+	 at org.eclipse.ui.console.IOConsoleInputStream.read(IOConsoleInputStream.java:113)
+	 at org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob.run(GdbBasicCliConsole.java:248)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-08-13 10:33:54.045 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/mauricewashington/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/mauricewashington/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-13 11:30:44.527
+!MESSAGE Log4j2 initialized with config file /Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/target/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-13 11:30:51.958
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 14:28:15.482
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-13 15:13:01.487
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:15:22.750
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-13 15:15:24.008
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-13 15:18:07.958
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:26:09.678
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-13 15:26:10.918
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-13 15:30:00.287
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:38:55.820
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-13 15:38:57.020
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-13 15:40:16.697
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:51:02.360
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-13 15:51:03.587
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:55:43.825
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.debug.core 4 125 2025-08-13 15:55:45.025
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Target not available.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:164)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:83)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:138)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:473)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:714)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.performLookup(DsfSourceDisplayAdapter.java:223)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.run(DsfSourceDisplayAdapter.java:203)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10001 2025-08-13 15:55:45.028
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-13 15:55:45.032
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:56:18.504
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2025-08-13 15:56:19.778
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:57:06.387
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:58:18.169
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:58:49.640
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:59:19.030
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 15:59:47.004
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:00:15.236
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:00:35.348
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:00:54.365
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:01:17.698
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:02:10.740
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:17:39.072
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:20:02.439
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:22:23.918
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:23:04.902
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:23:47.355
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:47:49.970
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:48:47.555
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:50:41.139
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.debug.core 4 125 2025-08-13 16:50:42.332
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Target not available.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:164)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:83)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:138)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:473)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:714)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.performLookup(DsfSourceDisplayAdapter.java:223)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.run(DsfSourceDisplayAdapter.java:203)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10001 2025-08-13 16:50:42.334
+!MESSAGE Target not available.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:57:49.743
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2025-08-13 16:59:37.581
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 16000000; div: 8
+
+!ENTRY org.eclipse.debug.core 4 125 2025-08-13 16:59:38.823
+!MESSAGE Error logged from Debug Core: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Target not available.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.getSourceName(DsfSourceLookupParticipant.java:164)
+	at org.eclipse.cdt.dsf.debug.sourcelookup.DsfSourceLookupParticipant.findSourceElements(DsfSourceLookupParticipant.java:83)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector$SourceLookupQuery.run(AbstractSourceLookupDirector.java:138)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.doSourceLookup(AbstractSourceLookupDirector.java:473)
+	at org.eclipse.debug.core.sourcelookup.AbstractSourceLookupDirector.getSourceElement(AbstractSourceLookupDirector.java:714)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.performLookup(DsfSourceDisplayAdapter.java:223)
+	at org.eclipse.cdt.dsf.debug.ui.sourcelookup.DsfSourceDisplayAdapter$LookupJob.run(DsfSourceDisplayAdapter.java:203)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10001 2025-08-13 16:59:38.825
+!MESSAGE Target not available.

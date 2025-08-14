@@ -1,0 +1,26 @@
+/*
+ * lcd.h
+ *
+ *  Created on: Aug 10, 2025
+ *      Author: mauricewashington
+ */
+
+#ifndef LCD_H_
+#define LCD_H_
+
+#include "stm32f407xx.h"
+
+/*
+ * Application Configurable Macros
+ */
+#define LCD_GPIO_PORT	GPIOD
+
+
+
+/*
+ * bsp exposed APIs
+ */
+
+void lcd_init(void);
+
+#endif /* LCD_H_ */

@@ -35,12 +35,12 @@ uint8_t ds1307_init(void)
 	I2C_PeripheralControl(DS1307_I2C, ENABLE);
 
 	//4. Disable clock halt
-	ds1307_write(0, DS1307_ADDR_SEC);
+	ds1307_write(0x00, DS1307_ADDR_SEC);
 
 	//5. Read back clock halt bit
 	uint8_t clock_state = ds1307_read(DS1307_ADDR_SEC);
 
-	return (clock_state >> 7) & 0x1; // return only halt state
+	return ((clock_state >> 7) & 0x1); // return only halt state
 	//returns 1? CH = 1 i.e. clock halted; init failed!
 	//returns 0? CH= 0 i.e. clock not halted; init success.
 }
@@ -62,11 +62,9 @@ void ds1307_set_current_time(RTC_Time_t *rtc_time)
 	else
 	{
 		hours |= (1 << 6);
-		hours = (rtc_time->time_format == TIME_FORMAT_12HRS_PM)
-				? hours | (1 << 5)
-				: hours & ~(1 << 5);
+		hours = (rtc_time->time_format == TIME_FORMAT_12HRS_PM) ? hours | (1 << 5) : hours & ~(1 << 5);
 	}
-	ds1307_write(binary_to_bcd(rtc_time->hours), DS1307_ADDR_HRS);
+	ds1307_write(hours, DS1307_ADDR_HRS);
 }
 
 void ds1307_get_current_time(RTC_Time_t *rtc_time)
@@ -75,24 +73,16 @@ void ds1307_get_current_time(RTC_Time_t *rtc_time)
 
 	seconds = ds1307_read(DS1307_ADDR_SEC);
 	seconds &= ~(1 << 7); // clear CH bit
-	rtc_time->seconds = bcd_to_binary(seconds);
 
+	rtc_time->seconds = bcd_to_binary(seconds);
 	rtc_time->minutes = bcd_to_binary(ds1307_read(DS1307_ADDR_MIN));
 
 	hours = ds1307_read(DS1307_ADDR_HRS);
 	if(hours & (1 << 6))
 	{
-		//12 hours format
-		if (hours & (1 << 5))
-		{
-			rtc_time->time_format = TIME_FORMAT_12HRS_PM;
-
-		}
-
-		else
-		{
-			rtc_time-> time_format = TIME_FORMAT_12HRS_AM;
-		}
+	//12 hour format
+		rtc_time->time_format = !((hours & (1 << 5)) == 0); // AM (0) or PM (1)
+		hours &= ~(0x3 << 5); // Clear bits 6 and 5
 	}
 	else
 	{
