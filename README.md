@@ -13,6 +13,7 @@ Various embedded systems projects built using STM32 and possibly other microcont
 Project that uses the DS1307 RTC to display time and date on a character LCD using I2C and GPIO drivers.
 
 **Demo**
+
 ![Demo GIF](./target/images/rtc.gif)
 
 **Wiring**
