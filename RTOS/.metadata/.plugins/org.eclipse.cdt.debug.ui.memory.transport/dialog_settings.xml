@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="EXPORT_DIALOG">
+		<item key="Start" value="0x20013358"/>
+		<item key="End" value="0x20014357"/>
+		<item key="Initial address" value="0x20013358"/>
+		<item key="File" value="/Users/mauricewashington/projects/udemy/Embedded-C/My_workspace/RTOS/SYSVIEW_Recordings/003.SVdat"/>
+		<item key="SELECTED_EXPORTER" value="rawbinary"/>
+	</section>
+</section>
