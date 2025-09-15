@@ -1,4 +1,4 @@
-17:02:32 **** Incremental Build of configuration Debug for project 002Led_Tasks ****
+21:53:41 **** Incremental Build of configuration Debug for project 002Led_Tasks ****
 make -j11 all 
 arm-none-eabi-size  002Led_Tasks.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  002Led_Tasks.elf
 Finished building: default.size.stdout
  
 
-17:02:32 Build Finished. 0 errors, 0 warnings. (took 127ms)
+21:53:41 Build Finished. 0 errors, 0 warnings. (took 121ms)
 
